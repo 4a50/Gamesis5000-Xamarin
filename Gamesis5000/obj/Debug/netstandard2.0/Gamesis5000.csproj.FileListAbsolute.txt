@@ -6,10 +6,7 @@ E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis50
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\App.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis5000.AssemblyInfoInputs.cache
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis5000.AssemblyInfo.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis5000.csproj.CoreCompileInputs.cache

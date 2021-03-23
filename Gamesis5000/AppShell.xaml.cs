@@ -11,8 +11,9 @@ namespace Gamesis5000
     public AppShell()
     {
       InitializeComponent();
-      Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-      Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+      //Use this for the navigation buttons on the bottom of the screen
+      //Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
+      //Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
     }
 
     private async void OnMenuItemClicked(object sender, EventArgs e)
