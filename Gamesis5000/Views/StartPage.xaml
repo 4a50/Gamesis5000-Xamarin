@@ -16,12 +16,13 @@
             <Label Text="This is the start Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <ListView BackgroundColor="Aquamarine"
+            <ListView BackgroundColor="Transparent"
                       ItemsSource="{Binding Games}">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell Text="{Binding Name}"
-                                  Detail="{Binding GameSystem}"/>
+                    <DataTemplate x:DataType="model:Game">
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding Description}"
+                                  />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>            

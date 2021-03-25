@@ -22,31 +22,31 @@ namespace Gamesis5000.ViewModels
     {
       var allGames = await GamesDB.GetAllGamesAsync();
 
-      Games.Add(new Game
-      {
-        Name = "SMW",
-        GameSystem = "SNES"
-      });
-      Games.Add(new Game
-      {
-        Name = "Super Metroid 3",
-        GameSystem = "SNES"
-      });
-
-      //try
-      //{        
-      //  foreach (var data in allGames)
-      //  {
-      //    Debug.WriteLine($"[Dev Note] {data.Name} added to Games Collection");
-      //    Games.Add(data);
-      //  }
-      //  Debug.WriteLine("[Dev Note] RangeItemCount: " + allGames.Count);
-      //}
-      //catch(Exception e)
+      //Games.Add(new Game
       //{
-      //  Debug.WriteLine("[Dev Error] Error in populating page: " + e);
+      //  Name = "SMW",
+      //  GameSystem = "SNES"
+      //});
+      //Games.Add(new Game
+      //{
+      //  Name = "Super Metroid 3",
+      //  GameSystem = "SNES"
+      //});
 
-      //}
+      try
+      {
+        foreach (var data in allGames)
+        {
+          Debug.WriteLine($"[Dev Note] {data.Name} added to Games Collection");
+          Games.Add(data);
+        }
+        Debug.WriteLine("[Dev Note] RangeItemCount: " + allGames.Count);
+      }
+      catch (Exception e)
+      {
+        Debug.WriteLine("[Dev Error] Error in populating page: " + e);
+
+      }
     }
   }
 }
