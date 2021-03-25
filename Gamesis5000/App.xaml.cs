@@ -1,4 +1,5 @@
-﻿using Gamesis5000.Services;
+﻿using Gamesis5000.Data;
+using Gamesis5000.Services;
 using Gamesis5000.Views;
 using System;
 using Xamarin.Forms;
@@ -11,10 +12,10 @@ namespace Gamesis5000
 
     public App()
     {
-      InitializeComponent();
-
-      DependencyService.Register<MockDataStore>();
+      InitializeComponent();          
+      DependencyService.Register<GamesisDB>();
       MainPage = new AppShell();
+      //MainPage = new MainPage();
     }
 
     protected override void OnStart()

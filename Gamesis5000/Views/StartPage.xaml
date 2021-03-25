@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gamesis5000.Views.StartPage"
+             xmlns:vm="clr-namespace:Gamesis5000.ViewModels"
+             xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
+             xmlns:model="clr-namespace:Gamesis5000.Models"
+             Title="{Binding Title}"
+             x:DataType="vm:StartPageViewModel">
+    <ContentPage.BindingContext>
+        <vm:StartPageViewModel/>
+    </ContentPage.BindingContext>
+            
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is the start Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView BackgroundColor="Transparent"
+                      ItemsSource="{Binding Games}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Game">
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding Description}"
+                                  />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
