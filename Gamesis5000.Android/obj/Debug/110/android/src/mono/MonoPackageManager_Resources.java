@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"Gamesis5000.Android.dll",
 		"FormsViewGroup.dll",
 		"Gamesis5000.dll",
+		"MvvmHelpers.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

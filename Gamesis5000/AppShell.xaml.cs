@@ -10,7 +10,7 @@ namespace Gamesis5000
   {
     public AppShell()
     {
-      InitializeComponent();
+      InitializeComponent();      
       //Use this for the navigation buttons on the bottom of the screen
       //Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
       //Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
@@ -18,7 +18,7 @@ namespace Gamesis5000
 
     private async void OnMenuItemClicked(object sender, EventArgs e)
     {
-      await Shell.Current.GoToAsync("//LoginPage");
+      await Shell.Current.GoToAsync("//StartPage");
     }
   }
 }

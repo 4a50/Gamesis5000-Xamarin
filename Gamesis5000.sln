@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamesis5000.Android", "Game
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamesis5000.iOS", "Gamesis5000.iOS\Gamesis5000.iOS.csproj", "{D1D0FCE5-B8CC-4CDF-918A-680D56D3E780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamesis5000", "Gamesis5000\Gamesis5000.csproj", "{81C8CD15-2DF3-46E6-A3BF-7CD1F7EF46C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gamesis5000", "Gamesis5000\Gamesis5000.csproj", "{81C8CD15-2DF3-46E6-A3BF-7CD1F7EF46C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

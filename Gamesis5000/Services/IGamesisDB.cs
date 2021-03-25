@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gamesis5000.Services
 {
-  public interface IGamesisDB
+  public interface IGamesisDB<T>
   {
     Task<bool> AddGameAsync(Game game);
     Task<Game> GetGameASync(int ID);

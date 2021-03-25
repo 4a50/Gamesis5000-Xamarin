@@ -585,3 +585,5 @@ E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000.Android\obj\Debug\110\android\asse
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000.Android\obj\Debug\110\android\assets\System.Buffers.dll
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000.Android\obj\Debug\110\android\assets\System.Memory.dll
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000.Android\obj\Debug\110\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000.Android\obj\Debug\110\android\assets\MvvmHelpers.dll
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000.Android\obj\Debug\110\android\assets\MvvmHelpers.pdb

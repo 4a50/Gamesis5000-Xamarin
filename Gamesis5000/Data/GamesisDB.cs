@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Gamesis5000.Data
 {
-  class GamesisDB : IGamesisDB
+  class GamesisDB : IGamesisDB<Game>
   {
     readonly SQLiteAsyncConnection database;
 
@@ -20,6 +20,7 @@ namespace Gamesis5000.Data
       string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GamesisDB.db3");
       database = new SQLiteAsyncConnection(path);
       database.CreateTableAsync<Game>().Wait();
+      SeedData();
     }
     public async Task<bool> AddGameAsync(Game game)
     {
@@ -100,6 +101,42 @@ namespace Gamesis5000.Data
       catch
       {
         return false;
+      }
+    }
+    public async void SeedData()
+    {
+      Debug.WriteLine("[Dev Note] Seeding Data Method Executing");
+      var data = await GetAllGamesAsync();
+      if (data == null || data.Count == 0)
+      {
+        Debug.WriteLine("[Dev Note] Seeding Data to Database");
+        await AddGameAsync(new Game
+        {
+          Name = "Super Mario World",
+          Description = "Launch Title for the SNES",
+          GameSystem = "SNES",
+          Genre = "Platformer",
+          ReleaseDate = DateTime.Parse("November 1990"),
+          BoxArtUrl = "",
+          Developer = "Nintendo",
+          Publisher = "Nintendo",
+          VideoUrl = ""
+
+        });
+
+        await AddGameAsync(new Game
+        {
+          Name = "Castlevania",
+          Description = "First in the franchise chronicling the quest of Simon Belmont against Count Dracula",
+          GameSystem = "NES",
+          Genre = "Platformer",
+          ReleaseDate = DateTime.Parse("September 1986"),
+          BoxArtUrl = "",
+          Developer = "Konami",
+          Publisher = "Nintendo",
+          VideoUrl = ""
+        });
+
       }
     }
   }
