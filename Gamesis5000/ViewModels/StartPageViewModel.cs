@@ -22,16 +22,7 @@ namespace Gamesis5000.ViewModels
     {
       var allGames = await GamesDB.GetAllGamesAsync();
 
-      //Games.Add(new Game
-      //{
-      //  Name = "SMW",
-      //  GameSystem = "SNES"
-      //});
-      //Games.Add(new Game
-      //{
-      //  Name = "Super Metroid 3",
-      //  GameSystem = "SNES"
-      //});
+      
 
       try
       {
