@@ -15,14 +15,14 @@ namespace Gamesis5000.Views
   public partial class HomePage : ContentPage
   {
     readonly HomePageViewModel _vm;
-    public ICommand NavigateCommand { get; private set;  }
-    Page page;
+    public ICommand NavigateCommand { get; private set;  }    
     public HomePage()
     {
       InitializeComponent();
+      //Create an instance of a page. Then navigates to it.
       NavigateCommand = new Command<Type>(async (Type pageType) =>
       {
-        page = (Page)Activator.CreateInstance(pageType);
+        Page page = (Page)Activator.CreateInstance(pageType);
         await Navigation.PushAsync(page);
       });
       BindingContext = this;

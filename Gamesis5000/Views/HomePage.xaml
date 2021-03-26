@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Gamesis5000.Views"
              x:Class="Gamesis5000.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
@@ -10,7 +11,7 @@
 
             <Button Text="View Inventory"
                     Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type local:ViewInventoryPage}"
+                    CommandParameter="{x:Type local:ViewInventoyPage}"
                     />
         </StackLayout>
     </ContentPage.Content>
