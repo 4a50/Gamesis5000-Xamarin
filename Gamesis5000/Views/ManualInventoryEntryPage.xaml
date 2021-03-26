@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gamesis5000.Views.ManualInventoryEntryPage">
+            
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Title"
+                   StyleId="Name"                   
+                   Completed="Entry_Completed"/>            
+            <Entry Placeholder="Game System"
+                   StyleId="GameSystem"                   
+                   Completed="Entry_Completed"/>
+            <!-- TODO: Add Genre as a DropDown list with option to make a new one-->
+            <Entry Placeholder="Description"
+                   StyleId="Description"                   
+                   Completed="Entry_Completed"/>
+            
+            <Entry Placeholder="Developer"
+                   StyleId="Developer"                   
+                   Completed="Entry_Completed"/>
+            <Entry Placeholder="Publisher"
+                   StyleId="Publisher"                   
+                   Completed="Entry_Completed"/>
+            <!--TODO: BoxArt Add ability to either let the app find it, or save file and attach-->
+            <!--TODO: LongPlay URL: Add ability to either let the app find it, or save file and attach-->
+            <!--TODO: Release Date Add Phone Built in Month/Year Picker.-->
+            <Button Text="Submit Data"
+                    HorizontalOptions="Start"
+                    Clicked="OnSaveButtonClicked"/>
+            <Button Text="Clear Data"
+                    HorizontalOptions="End"
+                    Clicked="ClearAllValues"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

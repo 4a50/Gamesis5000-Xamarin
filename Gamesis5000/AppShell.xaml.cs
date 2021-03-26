@@ -18,7 +18,11 @@ namespace Gamesis5000
 
     private async void OnMenuItemClicked(object sender, EventArgs e)
     {
-      await Shell.Current.GoToAsync("//StartPage");
+      MenuItem menuItem = sender as MenuItem;
+      string styleId = menuItem.StyleId.ToString();
+      string route = $"//{menuItem.StyleId}Page";
+
+      await Shell.Current.GoToAsync(route);
     }
   }
 }
