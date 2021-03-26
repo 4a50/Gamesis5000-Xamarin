@@ -34,13 +34,9 @@ namespace Gamesis5000.Views
     {
       Button clickedButton = (Button)sender;
       Debug.WriteLine($"[Dev Note] OnClick() Fired: {clickedButton.StyleId}");
+      
 
-      switch (clickedButton.StyleId)
-      {
-        case "ViewInventoryButton":
-          
-          break;
-      }
+      
     }
   }
 }

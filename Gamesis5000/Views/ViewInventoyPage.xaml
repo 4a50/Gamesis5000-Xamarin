@@ -5,6 +5,7 @@
              xmlns:vm="clr-namespace:Gamesis5000.ViewModels"
              xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
              xmlns:model="clr-namespace:Gamesis5000.Models"
+             xmlns:local="clr-namespace:Gamesis5000.Views"
              Title="{Binding Title}"
              x:DataType="vm:ViewInventoryViewModel">
 <ContentPage.BindingContext>
@@ -25,6 +26,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+            <Button Text="Return to Main"                    
+                    StyleId="ReturnToMain"
+                    Clicked="OnButtonClick"/>
+        
+
+        </StackLayout>
 </ContentPage.Content>
 </ContentPage>
