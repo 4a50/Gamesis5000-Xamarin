@@ -14,5 +14,6 @@ E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\XamlC.sta
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis5000.dll
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\ref\Gamesis5000.dll
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis5000.pdb
-E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\StartPage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\ManualInventoryEntryPage.xaml.g.cs
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\InventoryListPage.xaml.g.cs
