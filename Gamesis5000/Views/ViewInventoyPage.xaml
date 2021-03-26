@@ -27,9 +27,16 @@
             </ListView.ItemTemplate>
         </ListView>
             <Button Text="Return to Main"                    
-                    StyleId="ReturnToMain"
+                    StyleId="ReturnToMainButton"                    
                     Clicked="OnButtonClick"/>
-        
+            
+            <Button Text="Inventory Validation"                    
+                    StyleId="InventoryValidationButton"                    
+                    Clicked="OnButtonClick"/>
+            <Button Text="Quit"                    
+                    StyleId="QuitButton"                    
+                    Clicked="OnButtonClick"/>
+
 
         </StackLayout>
 </ContentPage.Content>

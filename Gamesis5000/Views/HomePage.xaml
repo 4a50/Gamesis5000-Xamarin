@@ -13,6 +13,19 @@
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type local:ViewInventoyPage}"
                     />
+            <SearchBar Placeholder="Enter Criteria">
+
+            </SearchBar>
+            
+            <Button Text="Inventory Validation"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:InvValidPage}">
+                
+            </Button>
+            <Label Text="(c)2021 4a50 Software"
+                    VerticalOptions="Center"                    
+                    HorizontalOptions="CenterAndExpand" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
