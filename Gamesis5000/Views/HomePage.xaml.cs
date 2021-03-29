@@ -14,6 +14,8 @@ namespace Gamesis5000.Views
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class HomePage : ContentPage
   {
+  public string Text { get; private set; }
+
     readonly HomePageViewModel _vm;
     public ICommand NavigateCommand { get; private set;  }    
     public HomePage()
@@ -37,6 +39,15 @@ namespace Gamesis5000.Views
       
 
       
+    }
+
+    
+
+    private void OnSearchButtonPressed(object sender, EventArgs e)
+    {
+      SearchBar search = (SearchBar)sender;
+      Text = search.Text;
+      Debug.WriteLine($"[Dev Note] Search Button Pressed Text: {search.Text}");
     }
   }
 }
