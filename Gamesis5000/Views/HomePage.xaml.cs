@@ -32,13 +32,10 @@ namespace Gamesis5000.Views
       Title = "Gamesis 5000X";
     }
 
-    private async Task OnClick(object sender, EventArgs e)
+    private void OnClick(object sender, EventArgs e)
     {
       Button clickedButton = (Button)sender;
       Debug.WriteLine($"[Dev Note] OnClick() Fired: {clickedButton.StyleId}");
-      
-
-      
     }
 
     

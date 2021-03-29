@@ -53,76 +53,48 @@
                    FontSize="Title"/>
                 
                 <!-- RadioButtons and Labels-->
-                <Label Grid.Column="0"                       
-                       Grid.Row="1"
-                       HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="CenterAndExpand"     
-                       TextColor="{StaticResource AccentText}"
-                       FontSize="Medium"
-                       Text="Title"/>
-                <RadioButton
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    GroupName="SearchFilter"                    
-                    Value="Title"/>
 
-                <Label Grid.Column="2"
-                       Grid.Row="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       TextColor="{StaticResource AccentText}"
-                       FontSize="Medium"
-                       Text="System"/>
+            <RadioButton
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    GroupName="SearchFilter"
+                    Content="Title"
+                    Value="Title"/>            
                 <RadioButton
                     Grid.Row="1"
-                    Grid.Column="3"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="2"
                     GroupName="SearchFilter"                    
+                    Content="System"
                     Value="System"/>               
-                <Label Grid.Column="4"
-                       Grid.Row="1"                       
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       TextColor="{StaticResource AccentText}"
-                       FontSize="Medium"
-                       Text="Genre"/>
+                
                 <RadioButton
                     Grid.Row="1"
-                    Grid.Column="5"                    
+                    Grid.Column="4"                    
+                    Grid.ColumnSpan="2"
                     GroupName="SearchFilter"                    
+                    Content="Genre"
                     Value="Genre"/>
                 <SearchBar                    
                     SearchButtonPressed="OnSearchButtonPressed"
                     Placeholder="Enter Criteria"
                     Grid.Row="2"
-                    Grid.ColumnSpan="6"/>
-
-                <Label Text="From Web"
-                       Grid.Row="3"
-                       Grid.Column="0"
-                       Grid.ColumnSpan="2"
-                       VerticalOptions="FillAndExpand"                       
-                       HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       />
+                    d
+                    Grid.ColumnSpan="6"/>               
                        
-                <RadioButton Grid.Column="2"
-                             Grid.Row="3"                             
+                <RadioButton Grid.Row="3"     
+                             Grid.Column="0"
+                             Grid.ColumnSpan="3"                             
                              GroupName="SourceSearch"
-                             VerticalOptions="FillAndExpand"                       
-                       HorizontalOptions="FillAndExpand"                       
+                             Content="From Web"
                              />
                 <RadioButton Grid.Column="3"
                              Grid.Row="3"
-                             GroupName="SourceSearch"/>
-                <Label Text="From Database"
-                       VerticalOptions="FillAndExpand"                       
-                       HorizontalOptions="FillAndExpand"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"                      
-                       Grid.Row="3"
-                       Grid.Column="4"
-                       Grid.ColumnSpan="2"/>
+                             Grid.ColumnSpan="3"
+                             GroupName="SourceSearch"
+                             Content="From Database"/>
+                
                 <!-- This is for Visualization purposes only.  Delete when not needed -->
 
                 <BoxView Grid.Row="4"
