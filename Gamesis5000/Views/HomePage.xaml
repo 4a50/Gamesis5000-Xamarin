@@ -9,21 +9,15 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout>
-            <Label Text="This is the Home Page!"
-                
+            <Label Text="Welcome to the Gamesis 5000X."        
+                   FontSize="Large"
+                   Padding="0,10,0,10"
+                HorizontalOptions="CenterAndExpand" />
+        <Label Text="Everything you need to keep your library up-to-date!"                
+                Padding="0,0,0,40"
+                FontSize="Small"
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button Text="View Inventory"                    
-                    Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type local:ViewInventoyPage}"
-                    />
-               
-            <Button Text="Inventory Validation"
-                    Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type local:InvValidPage}">
-                
-            </Button>
-            
             <Grid BackgroundColor="{StaticResource Accent}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -79,8 +73,7 @@
                 <SearchBar                    
                     SearchButtonPressed="OnSearchButtonPressed"
                     Placeholder="Enter Criteria"
-                    Grid.Row="2"
-                    d
+                    Grid.Row="2"                    
                     Grid.ColumnSpan="6"/>               
                        
                 <RadioButton Grid.Row="3"     
@@ -96,7 +89,7 @@
                              Content="From Database"/>
                 
                 <!-- This is for Visualization purposes only.  Delete when not needed -->
-
+<!--
                 <BoxView Grid.Row="4"
                          Grid.Column="0"
                          BackgroundColor="Black"
@@ -127,10 +120,34 @@
                          BackgroundColor="Green"
                          VerticalOptions="FillAndExpand"
                          HorizontalOptions="FillAndExpand"/>
-            </Grid>            
-            <Label Text="(c)2021 4a50 Software"
-                    VerticalOptions="Center"                    
-                    HorizontalOptions="CenterAndExpand" />
+ -->
+            </Grid>
+        <Button Text="View Inventory"                    
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ViewInventoyPage}"
+                    />
+               
+            <Button Text="Inventory Validation"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:InvValidPage}">
+                
+            </Button>
+            
+        <BoxView
+            BackgroundColor="Transparent"
+            HeightRequest="100"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"/>
+        <!-- Place Holder for more Content at some point.  Boxart Picture?-->
+        <Label Text="(c)2021 4a50 Software"
+                   BackgroundColor="{StaticResource Accent}" 
+                   FontSize="Large"
+                   VerticalOptions="FillAndExpand"                       
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource AccentText}"
+                   />
 
         </StackLayout>
     <!--</ContentPage.Content>-->

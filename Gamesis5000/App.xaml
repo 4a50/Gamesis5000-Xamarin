@@ -21,12 +21,12 @@
             </Style>
             <Style TargetType="SearchBar">
                 <Setter Property="BackgroundColor" Value="{StaticResource SecondaryAccent}"></Setter>
-                <Setter Property="Margin" Value="10,0,10,0"></Setter>
+                <Setter Property="Margin" Value="10,0,10,0"></Setter>                
                 
-            </Style>
-            
+            </Style>            
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="Margin" Value="10,10,10,5"></Setter>                
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
