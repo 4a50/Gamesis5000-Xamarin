@@ -7,8 +7,8 @@
              >
     <ContentPage.Content>
         <StackLayout>
-             <Label Text="{Binding }"
-           <!-- <Label BindingContext="{x:Reference Name=SearchResultsPage}"
+            <Label Text="{Binding SearchStringDisplay }"/>
+            <!-- <Label BindingContext="{x:Reference Name=SearchResultsPage}"
                 Text="{Binding searchCriteria.SearchByFilter}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
@@ -16,7 +16,7 @@
                 Text="{Binding searchCriteria.SearchByDatabase}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" /> -->
-            <Label Text="This is where the results should be"/>
+           
 
         </StackLayout>
     </ContentPage.Content>
