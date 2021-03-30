@@ -1,0 +1,573 @@
+{
+  "code": 200,
+  "status": "Success",
+  "data": {
+    "count": 20,
+    "games": [
+      {
+        "id": 2350,
+        "game_title": "Super Mario Advance 4: Super Mario Bros. 3",
+        "release_date": "2003-10-21",
+        "platform": 5,
+        "youtube": "",
+        "developers": [
+          6043
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 69672,
+        "game_title": "Super Mario Bros. 3 (Virtual Console)",
+        "release_date": "2014-04-16",
+        "platform": 4912,
+        "youtube": "https://www.youtube.com/watch?v=92bgHaM3B5A",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2,
+          27
+        ]
+      },
+      {
+        "id": 112,
+        "game_title": "Super Mario Bros. 3",
+        "release_date": "1990-02-12",
+        "platform": 7,
+        "youtube": "PKuFlO8FdRA",
+        "developers": [
+          6055
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 82453,
+        "game_title": "Super Mario Bros. 3: Mario Adventure",
+        "release_date": "2004-01-01",
+        "platform": 7,
+        "youtube": "https://www.youtube.com/watch?v=i8AGcPMkibo",
+        "developers": [
+          7309
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 49026,
+        "game_title": "Super Mario Bros. 3 (Virtual Console)",
+        "release_date": "2014-04-17",
+        "platform": 38,
+        "youtube": "YjrH5x-eHGc",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 62317,
+        "game_title": "Super Mario Bros. 3 (Virtual Console)",
+        "release_date": "2007-11-05",
+        "platform": 9,
+        "youtube": "",
+        "developers": null,
+        "genres": [
+          15,
+          27
+        ]
+      },
+      {
+        "id": 75889,
+        "game_title": "Super Mario Bros. 3 [Left Bros]",
+        "release_date": "1990-02-12",
+        "platform": 7,
+        "youtube": "",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 62205,
+        "game_title": "Super Mario Bros. 3+",
+        "release_date": "2013-04-24",
+        "platform": 9,
+        "youtube": "",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 76876,
+        "game_title": "Super Mario Bros. 35",
+        "release_date": "2020-10-01",
+        "platform": 4971,
+        "youtube": "https://youtu.be/a8DJpeCy8CQ",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          6,
+          15
+        ]
+      },
+      {
+        "id": 78967,
+        "game_title": "Game & Watch: Super Mario Bros.",
+        "release_date": "2020-11-13",
+        "platform": 4950,
+        "youtube": "",
+        "developers": [
+          6041
+        ],
+        "genres": [
+          2,
+          6,
+          15
+        ]
+      },
+      {
+        "id": 60880,
+        "game_title": "Super Mario Bros. 3Mix",
+        "release_date": "2015-02-24",
+        "platform": 7,
+        "youtube": "https://www.youtube.com/watch?v=e9rIGa9R9bE",
+        "developers": [
+          142
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 81654,
+        "game_title": "Super Mario Advance 4: Super Mario Bros. 3 [Not For Resale]",
+        "release_date": "2003-10-21",
+        "platform": 5,
+        "youtube": "https://youtu.be/VQl4OWQ2leI",
+        "developers": [
+          6043
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 49008,
+        "game_title": "Super Mario Advance 4: Super Mario Bros. 3",
+        "release_date": "2016-01-21",
+        "platform": 38,
+        "youtube": "71VB7sbr1Mw",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1
+        ]
+      },
+      {
+        "id": 67181,
+        "game_title": "Super Mario Bros",
+        "release_date": "2017-11-18",
+        "platform": 18,
+        "youtube": "",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 67182,
+        "game_title": "Super Mario Bros",
+        "release_date": "2017-11-18",
+        "platform": 36,
+        "youtube": "",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 83167,
+        "game_title": "Super Mario Bros. 2016",
+        "release_date": "2016-01-01",
+        "platform": 7,
+        "youtube": "",
+        "developers": [
+          7309
+        ],
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 74662,
+        "game_title": "Super Mario Bros. 2 (Virtual Console)",
+        "release_date": "2013-06-10",
+        "platform": 4912,
+        "youtube": "",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          15,
+          27
+        ]
+      },
+      {
+        "id": 70869,
+        "game_title": "Super Mario Bros C64",
+        "release_date": "2019-01-01",
+        "platform": 40,
+        "youtube": "",
+        "developers": null,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 140,
+        "game_title": "Super Mario Bros.",
+        "release_date": "1985-09-13",
+        "platform": 7,
+        "youtube": "v74SVzuyOxA",
+        "developers": [
+          6055
+        ],
+        "genres": [
+          1,
+          15
+        ]
+      },
+      {
+        "id": 33175,
+        "game_title": "Super Mario Bros.",
+        "release_date": "1986-02-21",
+        "platform": 4936,
+        "youtube": "SEWybxSAcfM",
+        "developers": [
+          6037
+        ],
+        "genres": [
+          15
+        ]
+      }
+    ]
+  },
+  "include": {
+    "boxart": {
+      "base_url": {
+        "original": "https://cdn.thegamesdb.net/images/original/",
+        "small": "https://cdn.thegamesdb.net/images/small/",
+        "thumb": "https://cdn.thegamesdb.net/images/thumb/",
+        "cropped_center_thumb": "https://cdn.thegamesdb.net/images/cropped_center_thumb/",
+        "medium": "https://cdn.thegamesdb.net/images/medium/",
+        "large": "https://cdn.thegamesdb.net/images/large/"
+      },
+      "data": {
+        "112": [
+          {
+            "id": 3174,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/112-2.jpg",
+            "resolution": "1534x2100"
+          },
+          {
+            "id": 6508,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/112-1.jpg",
+            "resolution": "1532x2100"
+          }
+        ],
+        "140": [
+          {
+            "id": 503,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/140-1.jpg",
+            "resolution": "709x1000"
+          },
+          {
+            "id": 3177,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/140-2.jpg",
+            "resolution": "1532x2100"
+          }
+        ],
+        "2350": [
+          {
+            "id": 4944,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/2350-1.jpg",
+            "resolution": "640x638"
+          },
+          {
+            "id": 100238,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/2350-1.png",
+            "resolution": "1000x1001"
+          }
+        ],
+        "33175": [
+          {
+            "id": 86746,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/33175-1.jpg",
+            "resolution": "300x308"
+          }
+        ],
+        "49008": [
+          {
+            "id": 125749,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/49008-1.png",
+            "resolution": "140x134"
+          }
+        ],
+        "49026": [
+          {
+            "id": 125789,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/49026-1.png",
+            "resolution": "140x134"
+          }
+        ],
+        "60880": [
+          {
+            "id": 221150,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/60880-1.jpg",
+            "resolution": null
+          }
+        ],
+        "62205": [
+          {
+            "id": 206453,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/62205-1.jpg",
+            "resolution": null
+          },
+          {
+            "id": 206454,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/62205-1.jpg",
+            "resolution": null
+          }
+        ],
+        "62317": [
+          {
+            "id": 211005,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/62317-1.jpg",
+            "resolution": null
+          }
+        ],
+        "67181": [
+          {
+            "id": 219031,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/67181-1.jpg",
+            "resolution": null
+          }
+        ],
+        "67182": [
+          {
+            "id": 219032,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/67182-1.jpg",
+            "resolution": null
+          }
+        ],
+        "69672": [
+          {
+            "id": 223468,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/69672-1.jpg",
+            "resolution": null
+          }
+        ],
+        "70869": [
+          {
+            "id": 225479,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/70869-1.jpg",
+            "resolution": null
+          },
+          {
+            "id": 225488,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/70869-1.jpg",
+            "resolution": null
+          }
+        ],
+        "74662": [
+          {
+            "id": 240771,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/74662-1.jpg",
+            "resolution": null
+          }
+        ],
+        "75889": [
+          {
+            "id": 246217,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/75889-1.jpg",
+            "resolution": null
+          }
+        ],
+        "76876": [
+          {
+            "id": 270957,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/76876-1.jpg",
+            "resolution": null
+          }
+        ],
+        "78967": [
+          {
+            "id": 254283,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/78967-1.jpg",
+            "resolution": null
+          }
+        ],
+        "81654": [
+          {
+            "id": 265452,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/81654-1.jpg",
+            "resolution": null
+          }
+        ],
+        "82453": [
+          {
+            "id": 269536,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/82453-1.jpg",
+            "resolution": null
+          }
+        ],
+        "83167": [
+          {
+            "id": 272400,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/83167-1.jpg",
+            "resolution": null
+          }
+        ]
+      }
+    },
+    "platform": {
+      "data": {
+        "5": {
+          "id": 5,
+          "name": "Nintendo Game Boy Advance",
+          "alias": "nintendo-gameboy-advance"
+        },
+        "7": {
+          "id": 7,
+          "name": "Nintendo Entertainment System (NES)",
+          "alias": "nintendo-entertainment-system-nes"
+        },
+        "9": {
+          "id": 9,
+          "name": "Nintendo Wii",
+          "alias": "nintendo-wii"
+        },
+        "18": {
+          "id": 18,
+          "name": "Sega Genesis",
+          "alias": "sega-genesis"
+        },
+        "36": {
+          "id": 36,
+          "name": "Sega Mega Drive",
+          "alias": "sega-mega-drive"
+        },
+        "38": {
+          "id": 38,
+          "name": "Nintendo Wii U",
+          "alias": "nintendo-wii-u"
+        },
+        "40": {
+          "id": 40,
+          "name": "Commodore 64",
+          "alias": "commodore-64"
+        },
+        "4912": {
+          "id": 4912,
+          "name": "Nintendo 3DS",
+          "alias": "nintendo-3ds"
+        },
+        "4936": {
+          "id": 4936,
+          "name": "Famicom Disk System",
+          "alias": "fds"
+        },
+        "4950": {
+          "id": 4950,
+          "name": "Game &amp; Watch",
+          "alias": "game-and-watch"
+        },
+        "4971": {
+          "id": 4971,
+          "name": "Nintendo Switch",
+          "alias": "nintendo-switch"
+        }
+      }
+    }
+  },
+  "pages": {
+    "previous": null,
+    "current": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super+Mario+Bros.+3&fields=platform%2Cyoutube%2Cgenres&include=boxart%2Cplatform&page=1",
+    "next": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super+Mario+Bros.+3&fields=platform%2Cyoutube%2Cgenres&include=boxart%2Cplatform&page=2"
+  },
+  "remaining_monthly_allowance": 0,
+  "extra_allowance": 5870,
+  "allowance_refresh_timer": null
+}

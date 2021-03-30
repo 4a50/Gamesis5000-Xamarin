@@ -19,3 +19,6 @@ E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\Hom
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\ViewInventoyPage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\InvValidPage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\SearchResultsPage.xaml.g.cs
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\bin\Debug\netstandard2.0\Xamarin.iOS.dll
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\bin\Debug\netstandard2.0\Xamarin.iOS.xml
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Gamesis5000.csproj.CopyComplete

@@ -5,6 +5,8 @@ using System.Text;
 using MvvmHelpers;
 using System.ComponentModel;
 using System.Diagnostics;
+using Gamesis5000.Services;
+using System.Threading.Tasks;
 
 namespace Gamesis5000.ViewModels
 {
@@ -13,6 +15,7 @@ namespace Gamesis5000.ViewModels
     public IObservable<SearchParameters> vmParams;
     SearchParameters searchParams;
     string searchString = "";
+    APIService apiServ;
 
     public string SearchStringDisplay { get { return searchString; } }
     public SearchResultsViewModel()
@@ -23,6 +26,12 @@ namespace Gamesis5000.ViewModels
     {
       searchParams = inParams;
       searchString = searchParams.SearchString;
+      apiServ = new APIService();
+      GetSampleText();
+    }
+    async void GetSampleText() 
+    {
+      Debug.WriteLine($"TestFile: {await apiServ.GetSampleJSONEntry()}");
     }
   }
 }
