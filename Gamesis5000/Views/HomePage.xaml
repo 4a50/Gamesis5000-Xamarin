@@ -3,29 +3,160 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Gamesis5000.Views"
              x:Class="Gamesis5000.Views.HomePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is the Home Page!"
-                VerticalOptions="CenterAndExpand" 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="AccentText">#000000</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+            <Label Text="Welcome to the Gamesis 5000X."        
+                   FontSize="Large"
+                   Padding="0,10,0,10"
+                   HorizontalOptions="CenterAndExpand" />
+        <Label Text="Everything you need to keep your library up-to-date!"                
+                Padding="0,0,0,40"
+                FontSize="Small"
                 HorizontalOptions="CenterAndExpand" />
+            <Grid BackgroundColor="{StaticResource Accent}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>                    
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition 
+                        Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Text="Search For a Game"                   
+                   Grid.ColumnSpan="6"
+                   Grid.Row="0"                       
+                   VerticalOptions="FillAndExpand"                       
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                       TextColor="{StaticResource AccentText}"
+                   BackgroundColor="{StaticResource Primary}"
+                       
+                   FontSize="Title"/>
+                
+                <!-- RadioButtons and Labels-->
 
-            <Button Text="View Inventory"
+            <RadioButton
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    GroupName="SearchFilter"
+                    CheckedChanged="OnCheckChanged"                    
+                    Content="Title"
+                    IsChecked="True"
+                    Value="Title"/>            
+                <RadioButton
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="2"
+                    CheckedChanged="OnCheckChanged" 
+                    GroupName="SearchFilter"                    
+                    Content="System"
+                    Value="System"/>               
+                
+                <RadioButton
+                    Grid.Row="1"
+                    Grid.Column="4"                    
+                    Grid.ColumnSpan="2"
+                    CheckedChanged="OnCheckChanged" 
+                    GroupName="SearchFilter"                    
+                    Content="Genre"
+                    Value="Genre"/>
+                <SearchBar                    
+                    SearchButtonPressed="OnSearchButtonPressed"
+                    Placeholder="Enter Criteria"
+                    Grid.Row="2"                    
+                    Grid.ColumnSpan="6"/>               
+                       
+                <RadioButton Grid.Row="3"     
+                             Grid.Column="0"
+                             Grid.ColumnSpan="3"                             
+                             GroupName="SourceSearch"
+                             CheckedChanged="OnCheckChanged" 
+                             Content="From Web"
+                             Value="False"
+                             />
+                <RadioButton Grid.Column="3"
+                             Grid.Row="3"
+                             Grid.ColumnSpan="3"
+                             IsChecked="True"
+                             CheckedChanged="OnCheckChanged" 
+                             GroupName="SourceSearch"
+                             Value="True"
+                             Content="From Database"/>
+                
+                <!-- This is for Visualization purposes only.  Delete when not needed -->
+<!--
+                <BoxView Grid.Row="4"
+                         Grid.Column="0"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="4"
+                         Grid.Column="1"
+                         BackgroundColor="Green"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="4"
+                         Grid.Column="2"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="4"
+                         Grid.Column="3"
+                         BackgroundColor="Green"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="4"
+                         Grid.Column="4"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="4"
+                         Grid.Column="5"
+                         BackgroundColor="Green"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+ -->
+            </Grid>
+        <Button Text="View Inventory"                    
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type local:ViewInventoyPage}"
                     />
-            <SearchBar Placeholder="Enter Criteria">
-
-            </SearchBar>
-            
+               
             <Button Text="Inventory Validation"
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type local:InvValidPage}">
                 
             </Button>
-            <Label Text="(c)2021 4a50 Software"
-                    VerticalOptions="Center"                    
-                    HorizontalOptions="CenterAndExpand" />
+            
+        <BoxView
+            BackgroundColor="Transparent"
+            HeightRequest="100"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"/>
+        <!-- Place Holder for more Content at some point.  Boxart Picture?-->
+        <Label Text="(c)2021 4a50 Software"
+                   BackgroundColor="{StaticResource Accent}" 
+                   FontSize="Large"
+                   VerticalOptions="FillAndExpand"                       
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource AccentText}"
+                   />
 
         </StackLayout>
-    </ContentPage.Content>
+    <!--</ContentPage.Content>-->
 </ContentPage>

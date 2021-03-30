@@ -18,3 +18,4 @@ E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\Man
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\ViewInventoyPage.xaml.g.cs
 E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\InvValidPage.xaml.g.cs
+E:\repos\Xamarin Apps\Gamesis5000\Gamesis5000\obj\Debug\netstandard2.0\Views\SearchResultsPage.xaml.g.cs
