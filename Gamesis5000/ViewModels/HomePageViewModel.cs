@@ -13,6 +13,5 @@ namespace Gamesis5000.ViewModels
     {
 
     }    
-    
   }
 }

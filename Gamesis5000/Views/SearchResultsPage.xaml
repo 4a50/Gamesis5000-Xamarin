@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Gamesis5000.Views.SearchResultsPage">
+             x:Class="Gamesis5000.Views.SearchResultsPage"
+             xmlns:vm="clr-namespace:Gamesis5000.ViewModels"
+             xmlns:local="clr-namespace:Gamesis5000.Views"                         
+             >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+             <Label Text="{Binding }"
+           <!-- <Label BindingContext="{x:Reference Name=SearchResultsPage}"
+                Text="{Binding searchCriteria.SearchByFilter}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label BindingContext="{x:Reference Name=SearchResultsPage}"
+                Text="{Binding searchCriteria.SearchByDatabase}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" /> -->
+            <Label Text="This is where the results should be"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

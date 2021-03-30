@@ -51,7 +51,9 @@ namespace Gamesis5000.Views
       Text = search.Text;
       searchParams.SearchString = search.Text;
       Debug.WriteLine($"[Dev Note] Search Button Pressed Sending: string: {searchParams.SearchString} filter: {searchParams.SearchByFilter} searchbyDbase: {searchParams.SearchByDatabase}");
-      await Navigation.PushAsync(new SearchResultsPage(searchParams), true);
+      Page page = new Page();
+      page = new SearchResultsPage(searchParams);
+      await Navigation.PushAsync(page);
     }
 
     private void OnCheckChanged(object sender, CheckedChangedEventArgs e)
