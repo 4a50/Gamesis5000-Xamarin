@@ -20,6 +20,7 @@ namespace Gamesis5000.Data
       string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GamesisDB.db3");
       database = new SQLiteAsyncConnection(path);
       database.CreateTableAsync<Game>().Wait();
+
       SeedData();
     }
     public async Task<bool> AddGameAsync(Game game)
