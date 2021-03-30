@@ -12,12 +12,11 @@
             <Label Text="Welcome to the Gamesis 5000X."        
                    FontSize="Large"
                    Padding="0,10,0,10"
-                HorizontalOptions="CenterAndExpand" />
+                   HorizontalOptions="CenterAndExpand" />
         <Label Text="Everything you need to keep your library up-to-date!"                
                 Padding="0,0,0,40"
                 FontSize="Small"
                 HorizontalOptions="CenterAndExpand" />
-
             <Grid BackgroundColor="{StaticResource Accent}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -34,7 +33,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Label Text="Search For a Title"                   
+                <Label Text="Search For a Game"                   
                    Grid.ColumnSpan="6"
                    Grid.Row="0"                       
                    VerticalOptions="FillAndExpand"                       
@@ -53,12 +52,15 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     GroupName="SearchFilter"
+                    CheckedChanged="OnCheckChanged"                    
                     Content="Title"
+                    IsChecked="True"
                     Value="Title"/>            
                 <RadioButton
                     Grid.Row="1"
                     Grid.Column="2"
                     Grid.ColumnSpan="2"
+                    CheckedChanged="OnCheckChanged" 
                     GroupName="SearchFilter"                    
                     Content="System"
                     Value="System"/>               
@@ -67,6 +69,7 @@
                     Grid.Row="1"
                     Grid.Column="4"                    
                     Grid.ColumnSpan="2"
+                    CheckedChanged="OnCheckChanged" 
                     GroupName="SearchFilter"                    
                     Content="Genre"
                     Value="Genre"/>
@@ -80,12 +83,17 @@
                              Grid.Column="0"
                              Grid.ColumnSpan="3"                             
                              GroupName="SourceSearch"
+                             CheckedChanged="OnCheckChanged" 
                              Content="From Web"
+                             Value="False"
                              />
                 <RadioButton Grid.Column="3"
                              Grid.Row="3"
                              Grid.ColumnSpan="3"
+                             IsChecked="True"
+                             CheckedChanged="OnCheckChanged" 
                              GroupName="SourceSearch"
+                             Value="True"
                              Content="From Database"/>
                 
                 <!-- This is for Visualization purposes only.  Delete when not needed -->
