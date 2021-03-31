@@ -7,6 +7,9 @@ using System.ComponentModel;
 using System.Diagnostics;
 using Gamesis5000.Services;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Data;
+using Newtonsoft.Json.Linq;
 
 namespace Gamesis5000.ViewModels
 {
@@ -27,11 +30,20 @@ namespace Gamesis5000.ViewModels
       searchParams = inParams;
       searchString = searchParams.SearchString;
       apiServ = new APIService();
-      GetSampleText();
+      JsonParse();
     }
-    async void GetSampleText() 
+    async void JsonParse() 
     {
-      Debug.WriteLine($"TestFile: {await apiServ.GetSampleJSONEntry()}");
+      await apiServ.JsonToGameList();
     }
   }
+  public class JsonObj
+  {
+    public JsonData data { get; set; }
+  }
+  public class JsonData {
+    public int count { get; set; }
+    public IEnumerable<JsonGames> games { get; set; }
+  }
+  
 }
