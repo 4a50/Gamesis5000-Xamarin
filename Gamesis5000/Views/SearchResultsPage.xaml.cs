@@ -39,5 +39,15 @@ namespace Gamesis5000.Views
       Debug.WriteLine($"[Dev Note] Item Selected args: {e.SelectedItemIndex}");
       Debug.WriteLine($"Name of SearchResults at same index: {_vm.SearchResultsList[e.SelectedItemIndex].Name}");
     }
+
+    private void OnTestPollClick(object sender, EventArgs e)
+    {
+      _vm.PollApi();
+    }
+
+    async void OnReturnToMainClick(object sender, EventArgs e)
+    {
+      await Navigation.PushAsync(new HomePage());
+    }
   }
 }

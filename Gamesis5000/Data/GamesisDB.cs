@@ -20,8 +20,12 @@ namespace Gamesis5000.Data
       string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GamesisDB.db3");
       database = new SQLiteAsyncConnection(path);
       database.CreateTableAsync<Game>().Wait();
+      database.CreateTableAsync<Developers>().Wait();
+      database.CreateTableAsync<GameSystem>().Wait();
+      database.CreateTableAsync<Genres>().Wait();
+      database.CreateTableAsync<Publishers>().Wait();
 
-      SeedData();
+      SeedGameData();
     }
     public async Task<bool> AddGameAsync(Game game)
     {
@@ -36,7 +40,6 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-
     public async Task<bool> DatabaseMasterReset()
     {
       try 
@@ -49,7 +52,6 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-
     public async Task<bool> DeleteGameAsync(int ID)
     {
       try
@@ -62,7 +64,6 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-
     public async Task<List<Game>> GetAllGamesAsync()
     {
       try
@@ -91,7 +92,6 @@ namespace Gamesis5000.Data
         return null;
       }
     }
-
     public async Task<bool> UpdateGameAsync(Game game)
     {
       try
@@ -104,7 +104,7 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-    public async void SeedData()
+    public async void SeedGameData()
     {
       Debug.WriteLine("[Dev Note] Seeding Data Method Executing");
       var data = await GetAllGamesAsync();
