@@ -37,7 +37,7 @@ namespace Gamesis5000.ViewModels
       apiServ = new APIService();
 
       FetchSearchResults();
-      //UpdateSearchResults();
+      UpdateSearchResults();
 
     }
     async void FetchSearchResults()
@@ -51,7 +51,13 @@ namespace Gamesis5000.ViewModels
     {
       try
       {
-        foreach (SearchGame sr in searchGames) { SearchResultsList.Add(sr); }
+        foreach (SearchGame sr in searchGames) {
+          sr.DetailBlurb = $"Release Date: {sr.ReleaseDate}  System: {sr.GameSystem}  Developer: {sr.Developer[0]}";
+          SearchResultsList.Add(sr);
+
+          Debug.WriteLine($"GameNameAdded: {sr.Name}");
+          Debug.WriteLine($"GameNameAdded: {sr.Description}");
+        }
       }
       catch (Exception e)
       {

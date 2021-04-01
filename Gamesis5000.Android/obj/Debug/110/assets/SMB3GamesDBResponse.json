@@ -2,180 +2,45 @@
   "code": 200,
   "status": "Success",
   "data": {
-    "count": 20,
+    "count": 17,
     "games": [
-      {
-        "id": 2350,
-        "game_title": "Super Mario Advance 4: Super Mario Bros. 3",
-        "release_date": "2003-10-21",
-        "platform": 5,
-        "youtube": "",
-        "developers": [
-          6043
-        ],
-        "genres": [
-          15
-        ]
-      },
-      {
-        "id": 69672,
-        "game_title": "Super Mario Bros. 3 (Virtual Console)",
-        "release_date": "2014-04-16",
-        "platform": 4912,
-        "youtube": "https://www.youtube.com/watch?v=92bgHaM3B5A",
-        "developers": [
-          6037
-        ],
-        "genres": [
-          1,
-          2,
-          27
-        ]
-      },
-      {
-        "id": 112,
-        "game_title": "Super Mario Bros. 3",
-        "release_date": "1990-02-12",
-        "platform": 7,
-        "youtube": "PKuFlO8FdRA",
-        "developers": [
-          6055
-        ],
-        "genres": [
-          15
-        ]
-      },
       {
         "id": 82453,
         "game_title": "Super Mario Bros. 3: Mario Adventure",
         "release_date": "2004-01-01",
         "platform": 7,
+        "players": 1,
+        "overview": "Hailed as one of the greatest NES hacks of all time. This Super Mario Brothers 3 hack changes the game right down to the core by tweaking the actual game engine itself!\r\n\r\nAside from the ‘typical’ graphics and text changes, this hack alters musical melodies, a full line up of all new levels, new power ups, new abilities for Mario, and even new enemies! When I say new, I’m not talking about changed graphics; I’m talking about completely new power ups and monsters. Money mushrooms, invisible Mario, time stopping potions, Kuribo shoes in any level that don’t disappear, shy guys that create projectiles, heat seeking bullet bills, and others are just the beginning of the changes made to this game.\r\n\r\nOn top of that, you have random weather patterns on every stage, boss battles on every stage, and infinite lives, so your coins go to more useful purposes. They will be used to buy items from Toad’s house and get some level exits to appear. Let’s not forget stored, and switchable, power ups such as those found in Super Mario World!",
+        "last_updated": null,
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "https://www.youtube.com/watch?v=i8AGcPMkibo",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           7309
         ],
         "genres": [
           15
-        ]
-      },
-      {
-        "id": 49026,
-        "game_title": "Super Mario Bros. 3 (Virtual Console)",
-        "release_date": "2014-04-17",
-        "platform": 38,
-        "youtube": "YjrH5x-eHGc",
-        "developers": [
-          6037
         ],
-        "genres": [
-          1,
-          2
-        ]
-      },
-      {
-        "id": 62317,
-        "game_title": "Super Mario Bros. 3 (Virtual Console)",
-        "release_date": "2007-11-05",
-        "platform": 9,
-        "youtube": "",
-        "developers": null,
-        "genres": [
-          15,
-          27
-        ]
-      },
-      {
-        "id": 75889,
-        "game_title": "Super Mario Bros. 3 [Left Bros]",
-        "release_date": "1990-02-12",
-        "platform": 7,
-        "youtube": "",
-        "developers": [
-          6037
+        "publishers": [
+          4425
         ],
-        "genres": [
-          15
-        ]
-      },
-      {
-        "id": 62205,
-        "game_title": "Super Mario Bros. 3+",
-        "release_date": "2013-04-24",
-        "platform": 9,
-        "youtube": "",
-        "developers": [
-          6037
-        ],
-        "genres": [
-          15
-        ]
-      },
-      {
-        "id": 76876,
-        "game_title": "Super Mario Bros. 35",
-        "release_date": "2020-10-01",
-        "platform": 4971,
-        "youtube": "https://youtu.be/a8DJpeCy8CQ",
-        "developers": [
-          6037
-        ],
-        "genres": [
-          6,
-          15
-        ]
-      },
-      {
-        "id": 78967,
-        "game_title": "Game & Watch: Super Mario Bros.",
-        "release_date": "2020-11-13",
-        "platform": 4950,
-        "youtube": "",
-        "developers": [
-          6041
-        ],
-        "genres": [
-          2,
-          6,
-          15
-        ]
-      },
-      {
-        "id": 60880,
-        "game_title": "Super Mario Bros. 3Mix",
-        "release_date": "2015-02-24",
-        "platform": 7,
-        "youtube": "https://www.youtube.com/watch?v=e9rIGa9R9bE",
-        "developers": [
-          142
-        ],
-        "genres": [
-          15
-        ]
-      },
-      {
-        "id": 81654,
-        "game_title": "Super Mario Advance 4: Super Mario Bros. 3 [Not For Resale]",
-        "release_date": "2003-10-21",
-        "platform": 5,
-        "youtube": "https://youtu.be/VQl4OWQ2leI",
-        "developers": [
-          6043
-        ],
-        "genres": [
-          15
-        ]
-      },
-      {
-        "id": 49008,
-        "game_title": "Super Mario Advance 4: Super Mario Bros. 3",
-        "release_date": "2016-01-21",
-        "platform": 38,
-        "youtube": "71VB7sbr1Mw",
-        "developers": [
-          6037
-        ],
-        "genres": [
-          1
+        "alternates": [
+          "Super Mario Bros. 3 - Mario Adventure",
+          "Super Mario Bros. 3 Mario Adventure",
+          "Super Mario Bros 3: Mario Adventure",
+          "Super Mario Bros 3 - Mario Adventure",
+          "Super Mario Bros 3 Mario Adventure",
+          "Super Mario 3: Mario Adventure",
+          "Super Mario 3 - Mario Adventure",
+          "Super Mario 3 Mario Adventure",
+          "Super Mario Adventure",
+          "Mario Adventure"
         ]
       },
       {
@@ -183,13 +48,30 @@
         "game_title": "Super Mario Bros",
         "release_date": "2017-11-18",
         "platform": 18,
+        "players": 1,
+        "overview": "Published on Nov 18, 2017. A playthrough of the unlicensed 2010 NES port for the Sega Genesis, Super Mario Bros. Also known as SMB4MD. This impressively accurate conversion, apparently done by the Argentinian programmer Mairtrus, is virtually identical to the original 1985 NES game.\r\n\r\nAccording to the original porter Mairtrus, he used an automatic converter to \"translate\" from the 6502 (NES) ASM's code to the M68K (Genesis) ASM, and needed to recreate a function to emulate the NES functions. At least 755 of the code is untouched after translating and optimizing the game port to 64kb.",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           6037
         ],
         "genres": [
           1,
           2
+        ],
+        "publishers": [
+          15
+        ],
+        "alternates": [
+          "super mario bros"
         ]
       },
       {
@@ -197,13 +79,30 @@
         "game_title": "Super Mario Bros",
         "release_date": "2017-11-18",
         "platform": 36,
+        "players": 1,
+        "overview": "Published on Nov 18, 2017. A playthrough of the unlicensed 2010 NES port for the Sega Genesis, Super Mario Bros. Also known as SMB4MD. This impressively accurate conversion, apparently done by the Argentinian programmer Mairtrus, is virtually identical to the original 1985 NES game.\r\n\r\nAccording to the original porter Mairtrus, he used an automatic converter to \"translate\" from the 6502 (NES) ASM's code to the M68K (Genesis) ASM, and needed to recreate a function to emulate the NES functions. At least 755 of the code is untouched after translating and optimizing the game port to 64kb.",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           6037
         ],
         "genres": [
           1,
           2
+        ],
+        "publishers": [
+          15
+        ],
+        "alternates": [
+          "super mario bros"
         ]
       },
       {
@@ -211,12 +110,33 @@
         "game_title": "Super Mario Bros. 2016",
         "release_date": "2016-01-01",
         "platform": 7,
+        "players": 2,
+        "overview": "The original game with updated sprites from Super Mario 3.  Another hidden gem from BaronGaming.",
+        "last_updated": null,
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           7309
         ],
         "genres": [
           15
+        ],
+        "publishers": [
+          4425
+        ],
+        "alternates": [
+          "Super Mario Bros. 16",
+          "Super Mario Bros 2016",
+          "Super Mario Bros 16",
+          "Super Mario Bros. - 2016.nes",
+          "Super Mario Bros - 2016.nes"
         ]
       },
       {
@@ -224,7 +144,18 @@
         "game_title": "Super Mario Bros. 2 (Virtual Console)",
         "release_date": "2013-06-10",
         "platform": 4912,
+        "players": 1,
+        "overview": "Mario, Luigi, Princess Toadstool, and Toad embark on a quest together to save the day against the villainous Wart.\r\nPick up items and throw them at your adversaries to clear levels in seven fantastical worlds. Even enemies can be picked up and tossed across the screen. Each character has a unique set of abilities: Luigi can jump higher and farther than any of the other characters, Toad can dig extremely fast and pull items out of the ground quicker than anyone, and the princess is the only one who can jump and hover temporarily. This unique installment in the Mario series will keep you coming back for more!\r\n\r\nThis game is only playable in 2D.",
+        "last_updated": "2020-12-25 20:17:45",
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           6037
         ],
@@ -232,6 +163,12 @@
           1,
           15,
           27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Super Mario Bros 2"
         ]
       },
       {
@@ -239,37 +176,350 @@
         "game_title": "Super Mario Bros C64",
         "release_date": "2019-01-01",
         "platform": 40,
+        "players": 1,
+        "overview": "The game Super Mario Bros 64 is the C64 - porting the NES - the game Super Mario Bros. (Original: スーパーマリオブラザーズ) of 1985. Nintendo sold more than 40 million Super Mario Bros modules , the Jump & Run was for decades as the most sold Video game of all time. With this success, the Japanese company laid the foundation stone for its supremacy in the computer games industry. In addition, the video game crash was finally overcome.\r\n\r\nThe implementation as a non-licensed fan project for the C64 and the C128 has only been around since 2019. The coder is called ZeroPaige . He worked on the program over a period of seven years, his goal was to port the NES version identically to the smallest possible detail. He did this in a very impressive way.\r\n\r\n\r\nStory and goal of the game\r\n\r\nPrincess Toadstool was caught by King Koopa (later called Bowser). Mario and his brother Luigi now want to rescue the noble lady. To do this, the two plumbers must cross a total of eight worlds, each divided into four levels . The last level is a King Koopa castle, but unfortunately you can only find doubles of the Dragon King in the first seven. There are only small mushroom creatures to be freed, Mario and Luigi with a \"Thank you! But our princess is in another castle!\" dispatch. At some point, however, every trip ends, the brothers face the right King Koopa and then find the princess.\r\n\r\n\r\nDesign \r\nThe player takes on the role of plumber Mario , who has to overcome obstacles and defeat opponents to free Princess Toadstool from King Koopa's clutches. In addition , Mario runs and jumps through the two-dimensional side view of the game world. The game is a classic side-scroller . The development of the C64 - porting took about seven years time. The implementation was as identical as possible and appears to be even more bug-free than the template.\r\n\r\nIn two-player mode, you switch when you lose a life or complete a game world. There are different items to collect and a variety of different enemies.\r\n\r\nThe NES console uses a Ricoh 2A03 as CPU , which is based on MOS Technology 6502 and is clocked at 1.77 MHz or 1.79 MHz. The C64 uses a similar processor, the 6510 . Ultimately, this only works at 0.985 MHz or 1.023 MHz. Since the NES CPU thus has a clock rate that is a good 70% faster, there are unfortunately some slowdowns on the C64 with a lot of action on the screen . If you have a super CPU for your C64, you can use a Turbo Chameleon 64 , or use a C128, this problem no longer occurs. It can also be emulated without slowdowns if you emulate a C128 or a C64 with SCPU, for example in VICE .",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": null,
         "genres": [
           15
-        ]
+        ],
+        "publishers": null,
+        "alternates": null
       },
       {
         "id": 140,
         "game_title": "Super Mario Bros.",
         "release_date": "1985-09-13",
         "platform": 7,
+        "players": 2,
+        "overview": "Do you have what it takes to save the Mushroom Princess?  You’ll have to think fast and move even faster to complete this quest!  The Mushroom Princess is being held captive by the evil Koopa tribe of turtles.  It’s up to you to rescue her from the clutches of the Koopa King before time runs out.  But it won’t be easy.  To get to the Princess, you’ll have to climb mountains, cross seas, avoid bottomless pits, fight off turtle soldiers and a host of black magic traps that only a Koopa King can devise.  It’s another non-stop adventure from the Super Mario Bros.!",
+        "last_updated": "2020-11-14 19:14:58",
+        "rating": "E - Everyone",
+        "coop": "No",
         "youtube": "v74SVzuyOxA",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           6055
         ],
         "genres": [
           1,
           15
-        ]
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
       },
       {
         "id": 33175,
         "game_title": "Super Mario Bros.",
         "release_date": "1986-02-21",
         "platform": 4936,
+        "players": 2,
+        "overview": "Do you have what it takes to save the Mushroom Princess?\r\n\r\nYou'll have to think fast and move even faster to complete this quest! The Mushroom Princess is being held captive by the evil Koopa tribe of turtles. It's up to you to rescue her from the clutches of the Koopa King before time runs out. But it won't be easy. To get to the princess, you'll have to climb mountains, cross seas, avoid bottomless pits, fight off turtle soldiers and a host of black magic traps that only a Koopa King can devise. It's another non-stop adventure from the SUPER MARIO BROTHERS!",
+        "last_updated": "2018-07-11 21:59:43",
+        "rating": null,
+        "coop": "No",
         "youtube": "SEWybxSAcfM",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
         "developers": [
           6037
         ],
         "genres": [
           15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "スーパーマリオブラザーズ"
+        ]
+      },
+      {
+        "id": 66953,
+        "game_title": "Super Mario Bros. (Virtual Console)",
+        "release_date": "2012-02-16",
+        "platform": 4912,
+        "players": 2,
+        "overview": "Mario™ and Luigi™ star in their first ever Mushroom Kingdom adventure! Find out why Super Mario Bros. is instantly recognizable to millions of people across the globe, and what made it the best-selling game in the world for three decades straight. Jump over obstacles, grab coins, kick shells, and throw fireballs through eight action-packed worlds in this iconic NES classic. Only you and the Mario Bros. can rescue Princess Toadstool from the clutches of the evil Bowser.",
+        "last_updated": "2020-12-25 20:17:26",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": null,
+        "genres": [
+          1,
+          15,
+          27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 2347,
+        "game_title": "Super Mario Advance",
+        "release_date": "2001-06-10",
+        "platform": 5,
+        "players": 4,
+        "overview": "Two Classics, One Pak!\r\n\r\nSuper Mario Bros. 2 and Mario Bros., together in one Game Pak - and on Game Boy Advance, they're better than ever! There's all of the running, jumping, jumping, and veggie flinging that made NES Super Mario Bros. 2 a smash hit, plus new enemies and bigger items. And in the updated arcade classic Mario Bros., you can work together or have a brawl bumping off baddies and collecting coins. It all adds up to advanced Mario mayhem!\r\n\r\n- 20 levels of fiend-infested fun! Play as Mario, Luigi, Peach and even Toad, each with unique running, jumping, and lifting abilities. Hurl an amazing array of items like bombs, turtle shells and POW blocks to topple enemies and clear the path!\r\n\r\n-Two multiplayer modes for up to 4 players! In Single-Pak play, up to four can connect with Game Link cables and just one Game Pak. In Multi-Pak play, connect up to four Game Boy Advance systems using Game Link cables and one Game Pak per person. (Requires Game Boy Advance Game Link cable(s), sold separately.)\r\n\r\n-Powered up play on Game Boy Advance! The world's most powerful handheld system brings you bright, colorful graphics, more on-screen enemies, and amazing voices and sound effects.",
+        "last_updated": "2020-03-21 09:33:14",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Super Mario Bros. 2",
+          "Super Mario Advance: Super Mario Bros. 2"
+        ]
+      },
+      {
+        "id": 22771,
+        "game_title": "Super Mario Bros. 2",
+        "release_date": "1986-06-03",
+        "platform": 4936,
+        "players": 1,
+        "overview": "Originally released in Japan as Super Mario Bros.® 2, this game has previously made only brief cameo appearances in the Western hemisphere. Mario fans will appreciate the familiar look and feel of the game, while finding that its updated game play creates an entirely new challenge. No longer content just to wear different-colored overalls, Mario and Luigi also possess different skill sets (Mario can stop quicker, while Luigi can jump higher). In addition to the classic enemies already known to fans worldwide, there are also Poison Mushrooms, backward Warp Zones, and the occasional wind gust (which can help or hinder your progress) to take into account. And if that’s somehow not enough, expert players can go looking for the game’s secret worlds. So get ready to put your Mario skills to the ultimate test, and save the Princess again. Just don’t be surprised if she’s in another castle!",
+        "last_updated": "2018-08-11 15:01:11",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": null,
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6043
+        ],
+        "genres": [
+          1,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Super Mario Bros: The Lost Levels",
+          "スーパーマリオブラザーズ",
+          "Super Mario Bros. 2"
+        ]
+      },
+      {
+        "id": 171,
+        "game_title": "Super Mario Bros. 2",
+        "release_date": "1988-10-09",
+        "platform": 7,
+        "players": 1,
+        "overview": "Mario’s back!  Bigger and badder than ever before!  This time it’s a fierce action-packed battle to free the land of Subcon from the curse of the evil Wart.  It’s up to you, along with Mario, Luigi, Toad and the Princess, to fight your way through bizarre multi-level worlds and find him!  This time you’ve got a brand new kind of power - plucking power - and now anything you find can be a weapon.  But beware!  You’ve never seen creatures like these!  Shyguys and Tweeters!  Ninji and Beezos!  And you’ve never had an adventure like this!  Only cunning and speed can save you now…",
+        "last_updated": "2018-08-11 15:01:11",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "mMFdeYwPEQQ",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6055
+        ],
+        "genres": [
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 2350,
+        "game_title": "Super Mario Advance 4: Super Mario Bros. 3",
+        "release_date": "2003-10-21",
+        "platform": 5,
+        "players": 4,
+        "overview": "THE MARIO BROS. AT THEIR BEST!\r\n\r\nThe best-selling game of all time has arrived for Game Boy Advance, now with all-new features! Mario’s not alone! This time around, Luigi can get in on the action!\r\n\r\nLink up with any Super Mario Advance game for multiplayer Mario Bros. madness! Use wild power-ups like the Super Leaf and the Frog and Tanooki Suits!\r\n\r\nEVEN MORE MARIO FUN IS IN THE CARDS! LINK UP AND USE AN E-READER AND SPECIAL CARDS TO ADD CLASSIC AND UPDATED MARIO LEVELS, ALL-NEW LEVELS, AND INCREDIBLY HARD “SUPER” LEVELS, THAT YOU CAN SAVE TO YOUR GAME PAK. THERE ARE ALSO POWER-UP CARDS, DEMO CARDS WITH PRO TECHNIQUES, AND MUCH MORE! (e-Reader and e-Reader cards sold separately.)\r\n\r\nBONUS LEVEL CARD AND POWER-UP CARD INCLUDED!",
+        "last_updated": "2019-10-16 06:54:10",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6043
+        ],
+        "genres": [
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Super Mario Bros. 3"
+        ]
+      },
+      {
+        "id": 69672,
+        "game_title": "Super Mario Bros. 3 (Virtual Console)",
+        "release_date": "2014-04-16",
+        "platform": 4912,
+        "players": 2,
+        "overview": "Relive the classic that brought renowned power-ups such as the Tanooki Suit to the world of Super Mario Bros.!\r\n\r\nBowser™ and the Koopalings are causing chaos yet again, but this time they’re going beyond the Mushroom Kingdom into the seven worlds that neighbor it. Now Mario™ and Luigi™ must battle a variety of enemies, including a Koopaling in each unique and distinctive world, on their way to ultimately taking on Bowser himself. Lucky for the brothers, they have more power-ups available than ever before. Fly above the action using the Super Leaf, swim faster by donning the Frog Suit, or defeat enemies using the Hammer Bros. Suit. Use the brand-new overworld map to take the chance to play a minigame in hopes of gaining extra lives or to find a Toad’s House where you can pick up additional items. All this (and more) combines into one of gaming’s most well-known and beloved titles—are you ready to experience gaming bliss?",
+        "last_updated": "2020-11-15 08:51:16",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "https://www.youtube.com/watch?v=92bgHaM3B5A",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2,
+          27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Super Mario Bros. 3"
+        ]
+      },
+      {
+        "id": 112,
+        "game_title": "Super Mario Bros. 3",
+        "release_date": "1990-02-12",
+        "platform": 7,
+        "players": 2,
+        "overview": "Fight monsters and mini-bosses, avoid ghosts and the burning sun.  Make your way through water and quicksand.  Dodge cannonballs and bullets and rescue the King’s wand!\r\n\r\nIn Super Mario Bros. 3 there are more warps, more chances at extra lives, and new special suits!  The raccoon suit lets you fly and knock out blocks.  The frog suit helps you out-swim the deadly fish.  There are suits for every occasion!\r\n\r\nStore up flowers and mushrooms to use later on.  Play game-show type bonus rounds!  Go back to that last screen and get a mushroom!  Pause to take a break, then continue where you left off!\r\n\r\nSuper Mario Bros. 3 is fun to play alone, or team up with a buddy to prolong the adventure!\r\n\r\nNote: Turn based Co-op as players work in turn to clear individual levels in a world. There is also a vs. mini-game where players try to steal items from each other.",
+        "last_updated": "2021-01-04 07:45:35",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "PKuFlO8FdRA",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6055
+        ],
+        "genres": [
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 62205,
+        "game_title": "Super Mario Bros. 3+",
+        "release_date": "2013-04-24",
+        "platform": 9,
+        "players": 4,
+        "overview": "Mushroom world is attacked by the King of the Koopas. This time, Bowser has his seven accomplices, known as Koopalings and Bowser Jr. sent to abduct Princess Peach.\r\n\r\nPlay 140 levels of Super Mario Bros. 3 [SNES] and also the world and 38 levels of Super Mario Bros. 3 [GBA] + 12 Beta SMB3 levels [SNES]. All this with graphics of New Super Mario Bros. Wii!",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "E - Everyone",
+        "coop": "Yes",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 75751,
+        "game_title": "Mario IV",
+        "release_date": "1991-01-01",
+        "platform": 7,
+        "players": 1,
+        "overview": "Mario IV (aka Super Mario Bros. 4) is a hack of Armadillo released some time in the early 1990s. The main differences with Mario IV include a different title screen and the main character being replaced by Mario. Some of the graphics were taken from from Dian Shi Ma Li and Super Mario Bros. 3. An alternate version of the hack has a stage select that allows the player to start from any one of the 8 worlds. Mario IV's origin is unknown. It is possible that it shares a developer with 7 Grand Dad, due to Mario IV's numerous releases having an nearly identical PCB to said game. It is also somewhat hinted that the J.Y. Company released it at some point.",
+        "last_updated": null,
+        "rating": "Not Rated",
+        "coop": "No",
+        "youtube": "https://www.youtube.com/watch?v=lQaYUfKyjXI",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          3128
+        ],
+        "genres": [
+          15
+        ],
+        "publishers": null,
+        "alternates": [
+          "mario 4",
+          "Super Mario Bros. 4"
         ]
       }
     ]
@@ -317,6 +567,38 @@
             "resolution": "1532x2100"
           }
         ],
+        "171": [
+          {
+            "id": 113192,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/171-1.png",
+            "resolution": "1528x2100"
+          },
+          {
+            "id": 119926,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/171-1.jpg",
+            "resolution": "1200x1699"
+          }
+        ],
+        "2347": [
+          {
+            "id": 4938,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/2347-1.jpg",
+            "resolution": "640x644"
+          },
+          {
+            "id": 100239,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/2347-1.png",
+            "resolution": "1000x1001"
+          }
+        ],
         "2350": [
           {
             "id": 4944,
@@ -333,6 +615,22 @@
             "resolution": "1000x1001"
           }
         ],
+        "22771": [
+          {
+            "id": 67425,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/22771-1.png",
+            "resolution": "314x315"
+          },
+          {
+            "id": 133777,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/22771-1.jpg",
+            "resolution": "628x638"
+          }
+        ],
         "33175": [
           {
             "id": 86746,
@@ -340,33 +638,6 @@
             "side": "front",
             "filename": "boxart/front/33175-1.jpg",
             "resolution": "300x308"
-          }
-        ],
-        "49008": [
-          {
-            "id": 125749,
-            "type": "boxart",
-            "side": "front",
-            "filename": "boxart/front/49008-1.png",
-            "resolution": "140x134"
-          }
-        ],
-        "49026": [
-          {
-            "id": 125789,
-            "type": "boxart",
-            "side": "front",
-            "filename": "boxart/front/49026-1.png",
-            "resolution": "140x134"
-          }
-        ],
-        "60880": [
-          {
-            "id": 221150,
-            "type": "boxart",
-            "side": "front",
-            "filename": "boxart/front/60880-1.jpg",
-            "resolution": null
           }
         ],
         "62205": [
@@ -385,12 +656,12 @@
             "resolution": null
           }
         ],
-        "62317": [
+        "66953": [
           {
-            "id": 211005,
+            "id": 218461,
             "type": "boxart",
             "side": "front",
-            "filename": "boxart/front/62317-1.jpg",
+            "filename": "boxart/front/66953-1.jpg",
             "resolution": null
           }
         ],
@@ -446,39 +717,12 @@
             "resolution": null
           }
         ],
-        "75889": [
+        "75751": [
           {
-            "id": 246217,
+            "id": 245612,
             "type": "boxart",
             "side": "front",
-            "filename": "boxart/front/75889-1.jpg",
-            "resolution": null
-          }
-        ],
-        "76876": [
-          {
-            "id": 270957,
-            "type": "boxart",
-            "side": "front",
-            "filename": "boxart/front/76876-1.jpg",
-            "resolution": null
-          }
-        ],
-        "78967": [
-          {
-            "id": 254283,
-            "type": "boxart",
-            "side": "front",
-            "filename": "boxart/front/78967-1.jpg",
-            "resolution": null
-          }
-        ],
-        "81654": [
-          {
-            "id": 265452,
-            "type": "boxart",
-            "side": "front",
-            "filename": "boxart/front/81654-1.jpg",
+            "filename": "boxart/front/75751-1.jpg",
             "resolution": null
           }
         ],
@@ -529,11 +773,6 @@
           "name": "Sega Mega Drive",
           "alias": "sega-mega-drive"
         },
-        "38": {
-          "id": 38,
-          "name": "Nintendo Wii U",
-          "alias": "nintendo-wii-u"
-        },
         "40": {
           "id": 40,
           "name": "Commodore 64",
@@ -548,26 +787,16 @@
           "id": 4936,
           "name": "Famicom Disk System",
           "alias": "fds"
-        },
-        "4950": {
-          "id": 4950,
-          "name": "Game &amp; Watch",
-          "alias": "game-and-watch"
-        },
-        "4971": {
-          "id": 4971,
-          "name": "Nintendo Switch",
-          "alias": "nintendo-switch"
         }
       }
     }
   },
   "pages": {
     "previous": null,
-    "current": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super+Mario+Bros.+3&fields=platform%2Cyoutube%2Cgenres&include=boxart%2Cplatform&page=1",
-    "next": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super+Mario+Bros.+3&fields=platform%2Cyoutube%2Cgenres&include=boxart%2Cplatform&page=2"
+    "current": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super+Mario+Bros+3&fields=players%2Cpublishers%2Cgenres%2Coverview%2Clast_updated%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates&include=boxart%2Cplatform&page=1",
+    "next": null
   },
   "remaining_monthly_allowance": 0,
-  "extra_allowance": 5870,
+  "extra_allowance": 5863,
   "allowance_refresh_timer": null
 }

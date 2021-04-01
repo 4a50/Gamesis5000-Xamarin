@@ -18,6 +18,7 @@ namespace Gamesis5000.Models
     public string BoxArtUrlBack { get; set; }
     public string BoxArtUrlThumb { get; set; }
     public string VideoUrl { get; set; }
+    public string DetailBlurb { get; set; }
     public DateTime ReleaseDate { get; set; }
   }
 }

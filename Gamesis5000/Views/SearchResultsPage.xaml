@@ -6,16 +6,20 @@
              xmlns:local="clr-namespace:Gamesis5000.Views"     
              xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
              xmlns:model="clr-namespace:Gamesis5000.Models"
-             >
+             x:DataType="vm:SearchResultsViewModel">
+        <ContentPage.BindingContext>
+        <vm:SearchResultsViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
             <Label Text="{Binding SearchStringDisplay }"/>
             <ListView BackgroundColor="Transparent"
-                      ItemsSource="{Binding SearchResultsList}">
+                      ItemsSource="{Binding SearchResultsList}"
+                      ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="model:SearchGame">
                         <TextCell Text="{Binding Name}"
-                        Detail="{Binding Description}"/>
+                        Detail="{Binding DetailBlurb}"/>
                     </DataTemplate>
                           
                 </ListView.ItemTemplate>
