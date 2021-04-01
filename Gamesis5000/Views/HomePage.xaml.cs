@@ -20,7 +20,7 @@ namespace Gamesis5000.Views
     public SearchParameters searchParams;
 
 
-    readonly HomePageViewModel _vm;
+    //readonly HomePageViewModel _vm;
     public ICommand NavigateCommand { get; private set;  }    
     public HomePage()
     {

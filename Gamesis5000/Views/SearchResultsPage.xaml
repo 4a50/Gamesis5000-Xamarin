@@ -3,20 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Gamesis5000.Views.SearchResultsPage"
              xmlns:vm="clr-namespace:Gamesis5000.ViewModels"
-             xmlns:local="clr-namespace:Gamesis5000.Views"                         
-             >
+             xmlns:local="clr-namespace:Gamesis5000.Views"     
+             xmlns:mvvm="clr-namespace:MvvmHelpers;assembly=MvvmHelpers"
+             xmlns:model="clr-namespace:Gamesis5000.Models"
+             x:DataType="vm:SearchResultsViewModel">
+        <ContentPage.BindingContext>
+        <vm:SearchResultsViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
             <Label Text="{Binding SearchStringDisplay }"/>
-            <!-- <Label BindingContext="{x:Reference Name=SearchResultsPage}"
-                Text="{Binding searchCriteria.SearchByFilter}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label BindingContext="{x:Reference Name=SearchResultsPage}"
-                Text="{Binding searchCriteria.SearchByDatabase}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" /> -->
-           
+            <ListView BackgroundColor="Transparent"
+                      ItemsSource="{Binding SearchResultsList}"
+                      ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:SearchGame">
+                        <TextCell Text="{Binding Name}"
+                        Detail="{Binding DetailBlurb}"/>
+                    </DataTemplate>
+                          
+                </ListView.ItemTemplate>
+            </ListView>
 
         </StackLayout>
     </ContentPage.Content>

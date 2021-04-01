@@ -16,6 +16,8 @@ namespace Gamesis5000.ViewModels
   public class SearchResultsViewModel : BaseViewModel, INotifyPropertyChanged
   {
     public IObservable<SearchParameters> vmParams;
+    public ObservableRangeCollection<SearchGame> SearchResultsList { get; set; }
+    public List<SearchGame> searchGames;
     SearchParameters searchParams;
     string searchString = "";
     APIService apiServ;
@@ -24,26 +26,43 @@ namespace Gamesis5000.ViewModels
     public SearchResultsViewModel()
     {
       searchParams = new SearchParameters();
+      SearchResultsList = new ObservableRangeCollection<SearchGame>();
     }
     public SearchResultsViewModel(SearchParameters inParams)
     {
       searchParams = inParams;
       searchString = searchParams.SearchString;
+      searchGames = new List<SearchGame>();
+      SearchResultsList = new ObservableRangeCollection<SearchGame>();
       apiServ = new APIService();
-      JsonParse();
+
+      FetchSearchResults();
+      UpdateSearchResults();
+
     }
-    async void JsonParse() 
+    async void FetchSearchResults()
     {
-      await apiServ.JsonToGameList();
+      string sampleJson = null;
+      //Testing Purposes only     
+        sampleJson = await apiServ.SampleFileRead();            
+      searchGames = apiServ.JsonToSearchGameList(sampleJson);
+    }
+    void UpdateSearchResults()
+    {
+      try
+      {
+        foreach (SearchGame sr in searchGames) {
+          sr.DetailBlurb = $"Release Date: {sr.ReleaseDate}  System: {sr.GameSystem}  Developer: {sr.Developer[0]}";
+          SearchResultsList.Add(sr);
+
+          Debug.WriteLine($"GameNameAdded: {sr.Name}");
+          Debug.WriteLine($"GameNameAdded: {sr.Description}");
+        }
+      }
+      catch (Exception e)
+      {
+        Debug.WriteLine("[Dev Error] Unable to update SearchResultsList. " + e.Message);
+      }
     }
   }
-  public class JsonObj
-  {
-    public JsonData data { get; set; }
-  }
-  public class JsonData {
-    public int count { get; set; }
-    public IEnumerable<JsonGames> games { get; set; }
-  }
-  
 }
