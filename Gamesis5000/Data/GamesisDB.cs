@@ -155,19 +155,28 @@ namespace Gamesis5000.Data
           await database.DeleteAllAsync<Developers>();
           string json = await GetJsonStringFromFile("DeveloperJson.json");
           JObject jsonParsed = JObject.Parse(json);
-
+          List<Developers> developerList = new List<Developers>();
           var tokenSelected = jsonParsed.SelectToken("data").SelectToken("developers")["1"]["name"];
           int lenDevelopers = jsonParsed.SelectToken("data").SelectToken("developers").Count();
           for (int i = 1; i <= lenDevelopers; i++)
           {
+            //Debug.WriteLine($"[Dev Note] {i}");
             string number = i.ToString();
-            await database.InsertAsync(new Developers
+            try
             {
-              Name = (string)jsonParsed.SelectToken("data").SelectToken("developers")[number]["name"],
-              DevId = (int)jsonParsed.SelectToken("data").SelectToken("developers")[number]["id"]
-            });
+              var selectedData = jsonParsed.SelectToken("data").SelectToken("developers")[number];
+            developerList.Add(new Developers
+            {              
+              Name = (string)selectedData["name"],
+              DevId = (int)selectedData["id"]
+            }); 
+            }
+            catch
+            {              
+              //Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+            }
           }
-
+          await database.InsertAllAsync(developerList);
           Developers nameoftheDev = await database.Table<Developers>()
           .Where(i => i.Name == "1001 Software Development")
           .FirstOrDefaultAsync();

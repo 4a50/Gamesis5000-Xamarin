@@ -40,9 +40,9 @@ namespace Gamesis5000.Views
       Debug.WriteLine($"Name of SearchResults at same index: {_vm.SearchResultsList[e.SelectedItemIndex].Name}");
     }
 
-    private void OnTestPollClick(object sender, EventArgs e)
+    async void OnTestPollClick(object sender, EventArgs e)
     {
-      _vm.PollApi();
+      await _vm.PollApi();
     }
 
     async void OnReturnToMainClick(object sender, EventArgs e)
@@ -52,6 +52,7 @@ namespace Gamesis5000.Views
 
     async void OnDevRefreshPollClick(object sender, EventArgs e)
     {
+
       int numRowsAdded = await _vm.RefreshReference("Developers");
       await DisplayAlert("Action Completed", $"{numRowsAdded} records have been added", "Sweet!");
 
