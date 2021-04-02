@@ -24,6 +24,14 @@
                           
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="Test Poll API"                    
+                    StyleId="ReturnToMainButton"                    
+                    Clicked="OnTestPollClick"/>
+            <Button Text="Refresh Developer Ref List"                                                            
+                    Clicked="OnDevRefreshPollClick"/>
+            <Button Text="Return to Main"                    
+                    StyleId="ReturnToMainButton"                    
+                    Clicked="OnReturnToMainClick"/>
 
         </StackLayout>
     </ContentPage.Content>

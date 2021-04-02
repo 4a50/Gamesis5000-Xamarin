@@ -46,23 +46,34 @@ namespace Gamesis5000.ViewModels
       //Testing Purposes only     
         sampleJson = await apiServ.SampleFileRead();            
       searchGames = apiServ.JsonToSearchGameList(sampleJson);
+
     }
     void UpdateSearchResults()
     {
       try
-      {
+      {        
         foreach (SearchGame sr in searchGames) {
+          if (sr.Developer.Count == 0) { sr.Developer.Add(-1); }
           sr.DetailBlurb = $"Release Date: {sr.ReleaseDate}  System: {sr.GameSystem}  Developer: {sr.Developer[0]}";
           SearchResultsList.Add(sr);
 
           Debug.WriteLine($"GameNameAdded: {sr.Name}");
-          Debug.WriteLine($"GameNameAdded: {sr.Description}");
+          Debug.WriteLine($"GameNameAdded: {sr.Description}");        
         }
+        Debug.WriteLine($"Entries added SearchResultsList for display: {SearchResultsList.Count}");
       }
       catch (Exception e)
       {
         Debug.WriteLine("[Dev Error] Unable to update SearchResultsList. " + e.Message);
       }
+    }
+    async public Task<string> PollApi()
+    {      
+      return await apiServ.QueryDatabase();
+    }
+    async public Task<int> RefreshReference(string refItem)
+    {
+      return await GamesDB.RefreshDeveloper(true);
     }
   }
 }

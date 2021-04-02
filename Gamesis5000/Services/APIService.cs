@@ -16,27 +16,32 @@ namespace Gamesis5000.Services
   public class APIService
   {
     HttpClient client;
-    //"https://api.thegamesdb.net/v1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=super%20Metroid&filter%5Bplatform%5D=6"
+    string longUrl = "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super%20Mario%20Bros.%203&fields=platform%2Cyoutube%2Cgenres&include=boxart%2Cplatform";
     //string BaseUrl = "https://api.thegamesdb.net/v1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=super%20Metroid&filter%5Bplatform%5D=6";
     //string byTitle = 
-    
+    string jsonString = "";
+
 
 
     // This will be just a file access for a while until I can get the JSON parsed out correctly.    
-    const string localFileName = "SMB3GamesDBResponse.json";    
+    const string localFileName = "MetroidGamesDBResponse.json";    
     //
-
     public APIService()
     {
       client = new HttpClient();
+    }   
+    public async Task<string> QueryDatabase()
+    {
+      string jsonOutputString = "";
+      Uri uri = new Uri(longUrl);
+      HttpResponseMessage res = await client.GetAsync(uri);
+      if (res.IsSuccessStatusCode)
+      {
+        jsonString = await res.Content.ReadAsStringAsync();
+        Debug.WriteLine($"[Dev Output] {jsonString}");
+      }
+      return jsonOutputString;
     }
-
-    //public async Task<Game> GetDataAsync()
-    //{
-    //  //Uri uri = new Uri(;
-    //  return new Game();
-    //}
-
     public async Task<string> SampleFileRead()
     {
       //Local File.  Do Not use when accessing actual API
@@ -58,6 +63,7 @@ namespace Gamesis5000.Services
       List<SearchGame> jsonGameList = new List<SearchGame>();
       try
       {
+        Debug.WriteLine($"[Dev Note] jsonGameListLength: {jsonObj["data"]["games"].Count()}");
         jsonGameList = jsonObj["data"]["games"]
           .Select(game => new SearchGame
           {
@@ -74,6 +80,7 @@ namespace Gamesis5000.Services
             .Select(p => (int)p)
             .ToList())
           }).ToList();
+        Debug.WriteLine($"[Dev Note] Post-Conversion jsonGameListLength: {jsonGameList.Count}");
       }
       catch(Exception e)
       {
@@ -82,7 +89,11 @@ namespace Gamesis5000.Services
       Console.WriteLine("Nothing to see here");
       return jsonGameList;
     }
-   
+    string UpdateReferenceDatabase(string dbase, int code)
+    {
+      
+      return "";
+    }
   }  
 }
 

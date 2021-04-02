@@ -39,5 +39,23 @@ namespace Gamesis5000.Views
       Debug.WriteLine($"[Dev Note] Item Selected args: {e.SelectedItemIndex}");
       Debug.WriteLine($"Name of SearchResults at same index: {_vm.SearchResultsList[e.SelectedItemIndex].Name}");
     }
+
+    async void OnTestPollClick(object sender, EventArgs e)
+    {
+      await _vm.PollApi();
+    }
+
+    async void OnReturnToMainClick(object sender, EventArgs e)
+    {
+      await Navigation.PushAsync(new HomePage());
+    }
+
+    async void OnDevRefreshPollClick(object sender, EventArgs e)
+    {
+
+      int numRowsAdded = await _vm.RefreshReference("Developers");
+      await DisplayAlert("Action Completed", $"{numRowsAdded} records have been added", "Sweet!");
+
+    }
   }
 }

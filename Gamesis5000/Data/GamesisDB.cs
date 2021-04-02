@@ -1,12 +1,16 @@
 ﻿using Gamesis5000.Models;
 using Gamesis5000.Services;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace Gamesis5000.Data
 {
@@ -20,15 +24,19 @@ namespace Gamesis5000.Data
       string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GamesisDB.db3");
       database = new SQLiteAsyncConnection(path);
       database.CreateTableAsync<Game>().Wait();
+      database.CreateTableAsync<Developers>().Wait();
+      database.CreateTableAsync<GameSystem>().Wait();
+      database.CreateTableAsync<Genres>().Wait();
+      database.CreateTableAsync<Publishers>().Wait();
 
-      SeedData();
+      SeedGameData();
     }
     public async Task<bool> AddGameAsync(Game game)
     {
-      try 
+      try
       {
         await database.InsertAsync(game);
-        
+
         return true;
       }
       catch {
@@ -36,20 +44,18 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-
     public async Task<bool> DatabaseMasterReset()
     {
-      try 
+      try
       {
         await database.DeleteAllAsync<Game>();
         return true;
       }
-      catch 
+      catch
       {
         return false;
       }
     }
-
     public async Task<bool> DeleteGameAsync(int ID)
     {
       try
@@ -62,7 +68,6 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-
     public async Task<List<Game>> GetAllGamesAsync()
     {
       try
@@ -91,7 +96,6 @@ namespace Gamesis5000.Data
         return null;
       }
     }
-
     public async Task<bool> UpdateGameAsync(Game game)
     {
       try
@@ -104,7 +108,7 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-    public async void SeedData()
+    public async void SeedGameData()
     {
       Debug.WriteLine("[Dev Note] Seeding Data Method Executing");
       var data = await GetAllGamesAsync();
@@ -140,5 +144,89 @@ namespace Gamesis5000.Data
 
       }
     }
+
+    public async Task<int> RefreshDeveloper(bool fromFile = true)
+    {
+      List<Developers> devList = new List<Developers>();
+      if (fromFile)
+      {
+        try
+        {
+          await database.DeleteAllAsync<Developers>();
+          string json = await GetJsonStringFromFile("DeveloperJson.json");
+          JObject jsonParsed = JObject.Parse(json);
+          List<Developers> developerList = new List<Developers>();
+          var tokenSelected = jsonParsed.SelectToken("data").SelectToken("developers")["1"]["name"];
+          int lenDevelopers = jsonParsed.SelectToken("data").SelectToken("developers").Count();
+          for (int i = 1; i <= lenDevelopers; i++)
+          {
+            //Debug.WriteLine($"[Dev Note] {i}");
+            string number = i.ToString();
+            try
+            {
+              var selectedData = jsonParsed.SelectToken("data").SelectToken("developers")[number];
+            developerList.Add(new Developers
+            {              
+              Name = (string)selectedData["name"],
+              DevId = (int)selectedData["id"]
+            }); 
+            }
+            catch
+            {              
+              //Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+            }
+          }
+          await database.InsertAllAsync(developerList);
+          Developers nameoftheDev = await database.Table<Developers>()
+          .Where(i => i.Name == "1001 Software Development")
+          .FirstOrDefaultAsync();
+          Debug.WriteLine("Proof the record exists!: " + nameoftheDev.Name);
+          
+            
+
+          return await database.Table<Developers>().CountAsync();
+        }
+        catch (Exception e) {
+          Debug.WriteLine($"Unable to Create Developers Object: {e.Message}");
+          return -1;
+        }
+      }
+      else {
+        Debug.WriteLine($"Pull From the API placeholder");
+        return 0;
+      }
+    }
+
+
+    public Task<bool> RefreshGameSystemTable(bool fromFile = true)
+    {
+      throw new NotImplementedException();
+    }
+
+    public Task<bool> RefreshGenresTable(bool fromFile = true)
+    {
+      throw new NotImplementedException();
+    }
+
+    public Task<bool> RefreshPublishersTable(bool fromFile = true)
+    {
+      throw new NotImplementedException();
+    }
+
+    public async Task<string> GetJsonStringFromFile(string fileName)
+    {
+      string stringOut = "";
+      using (var stream = await FileSystem.OpenAppPackageFileAsync(fileName))
+      {
+        using (var reader = new StreamReader(stream))
+        {
+          stringOut = reader.ReadToEnd();
+        }
+      }
+      return stringOut;
+    }
   }
+  
+ 
 }
+

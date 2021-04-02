@@ -1,0 +1,922 @@
+{
+  "code": 200,
+  "status": "Success",
+  "data": {
+    "count": 20,
+    "games": [
+      {
+        "id": 3112,
+        "game_title": "Classic NES Series: Metroid",
+        "release_date": "2004-10-25",
+        "platform": 5,
+        "players": 1,
+        "overview": "The original Metroid game makes its way to the Game Boy Advance as part of the Classic NES Series. As Samus Aran, your mission is to keep space pirates from destroying the galaxy with their Metroids. To do this, you must penetrate Zebes, the pirates' home planet, while collecting special items to attack enemies in new ways. Metroid offers side-scrolling action that tests your dexterity and brings you back to classic '80s gaming.",
+        "last_updated": "2018-07-06 22:32:55",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": null,
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Famicom Mini: Metroid",
+          "Metroid"
+        ]
+      },
+      {
+        "id": 123,
+        "game_title": "Metroid",
+        "release_date": "1986-08-06",
+        "platform": 7,
+        "players": 1,
+        "overview": "It's you against the evil Mother Brain in the thrilling battle of Metroid!\r\n\r\nYou’re inside the fortress planet Zebes.  The planet of endless secret passageways where the Metroid are multiplying.  Left alone the Metroid are harmless.  But in the wrong hands they could destroy the galaxy.  It’s up to you to prevent the Mother Brain that controls Zebes from using the Metroid for evil purposes.  But that won’t be easy.  You’ll have to use your spacesuit to absorb valuable energy for your search to gain the use of power items like the Ice Beam, Wave Beam, High Jump Boots and Varia.  If you survive, it will be you and your acquired powers against the Mother Brain.\r\n\r\nWorth Noting: \r\nMetroid introduced nonlinear, side-scroller, maze-like, gameplay, in a platform, shooter. Metroid required players to discover permanent power-ups to progress further along; while backtracking through previously visited areas. The style is affectionately known as Metroid-vania' (Castlevania: Symphony of the Night being the second half to the term, mirrored the concept).\r\n\r\nMetroid also used a password system to resume progression of the game (Before the addition of battery backups and save files in console cartridges). Additionally the password system could be used for cheat codes: 'JUSTIN BAILEY ------ ------' (Just in Ballet) being famous, would remove Samus' power suit and start the player with many of the power-ups and fairly progressed through the game.\r\n\r\nCompleting the game in time and with enough power-ups revealed different endings. At the end Samus removes the helmet or power suit (depending) to a reveal a shocking suprise that endeared the character and broke new ground in gaming.",
+        "last_updated": "2020-11-15 20:01:42",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "D6jOGd0L1Hc",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6051
+        ],
+        "genres": [
+          1,
+          2,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 32222,
+        "game_title": "Metroid",
+        "release_date": "1986-08-06",
+        "platform": 4936,
+        "players": 1,
+        "overview": "It's you against the evil Mother Brain in the thrilling battle of Metroid! You're inside the fortress planet Zebes. The planet of endless secret passageways where the Metroid are multiplying. Left alone the Metroid are harmless. But in the wrong hands they could destroy the galaxy. It's up to you to prevent the Mother Brain that controls Zebes from using the Metroid for evil purposes. But that won't be easy. You'll have to use your spacesuit to absorb valuable energy for your search to gain the use of power items like the Ice Beam, Wave Beam, High Jump Boots and Varia. If you survive, it will be you and your acquired powers against the Mother Brain.",
+        "last_updated": "2018-07-11 21:40:14",
+        "rating": null,
+        "coop": "No",
+        "youtube": null,
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          2
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "メトロイド"
+        ]
+      },
+      {
+        "id": 71133,
+        "game_title": "Metroid",
+        "release_date": "2013-07-11",
+        "platform": 38,
+        "players": 1,
+        "overview": "Metroid (メトロイド, Metoroido?) is the first game in the Metroid series. It was released first for the Famicom Disk System on August 6, 1986, and later for the Nintendo Entertainment System in August 1987 in North America and in Europe on January 15, 1988. The game was produced by Gunpei Yokoi and was directed by Yoshio Sakamoto, with the music by Hirokazu Tanaka. The game was known for its eerie sci-fi flavor. Metroid would be remade for the Game Boy Advance under the title Metroid: Zero Mission, which updated the graphics, expanded the original plot and added new areas and abilities to the game, and even included the original version of the game being an unlockable feature upon completion. The original Metroid was also ported onto its own cartridge in the Classic NES Series, and later released on the Wii's Virtual Console on August 13, 2007.",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6051
+        ],
+        "genres": [
+          1,
+          2,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 83178,
+        "game_title": "Super Metroid Eris",
+        "release_date": "1970-01-01",
+        "platform": 6,
+        "players": 1,
+        "overview": "A ROM hack of Super Metroid",
+        "last_updated": "2021-03-08 04:33:00",
+        "rating": "T - Teen",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": null,
+        "genres": [
+          15
+        ],
+        "publishers": null,
+        "alternates": [
+          "Metroid - Eris 2012",
+          "Super Metroid Eris 2012"
+        ]
+      },
+      {
+        "id": 82344,
+        "game_title": "Metroid Rogue Dawn",
+        "release_date": "2017-01-14",
+        "platform": 7,
+        "players": 1,
+        "overview": "Metroid: Rogue Dawn is an unofficial prequel to the original Metroid game released in 1986. 30 years later, we bring you the events that unfolded before Samus’s famous “zero” mission on planet Zebes.\r\n\r\nThe original Metroid manual tells us about a deep-space research ship that was attacked. The Space Pirates seized a capsule said to contain a previously unknown life form in a state of suspended animation. Rogue Dawn surrounds these events that led up to the theft of the capsule, which ultimately placed the Metroids under the control of Ridley and the Mother Brain. The mission to acquire the capsule was placed in the hands of one of Ridley’s best-kept secrets: a rogue human agent, trained and manipulated by Ridley from a young age…\r\n\r\nTaken as a child from a Galactic Federation colony obliterated by Ridley’s faction, she was initially just another test subject slated to undergo horrific experiments. Ridley decided to instead manipulate and mold her into a weapon, his first human servant and dark agent. Primed yet untested, she is sent out on her own “zero” mission. She will retrieve a newly-discovered biological specimen in the possession of a Federation research crew orbiting planet SR388 and prove her worth.\r\n\r\nHer name is Dawn Aran.",
+        "last_updated": null,
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "https://www.youtube.com/watch?v=zmliZcVyPyQ",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          7309
+        ],
+        "genres": [
+          1,
+          2,
+          15,
+          28
+        ],
+        "publishers": [
+          4425
+        ],
+        "alternates": [
+          "Metroid: Rogue Dawn",
+          "Metroid - Rogue Dawn",
+          "Rogue Dawn"
+        ]
+      },
+      {
+        "id": 45361,
+        "game_title": "Metroid (Virtual Console)",
+        "release_date": "2007-07-20",
+        "platform": 9,
+        "players": 1,
+        "overview": "Metroid (メトロイド, Metoroido?) is the first game in the Metroid series. It was released first for the Famicom Disk System on August 6, 1986, and later for the Nintendo Entertainment System in August 1987 in North America and in Europe on January 15, 1988. The game was produced by Gunpei Yokoi and was directed by Yoshio Sakamoto, with the music by Hirokazu Tanaka. The game was known for its eerie sci-fi flavor. Metroid would be remade for the Game Boy Advance under the title Metroid: Zero Mission, which updated the graphics, expanded the original plot and added new areas and abilities to the game, and even included the original version of the game being an unlockable feature upon completion. The original Metroid was also ported onto its own cartridge in the Classic NES Series, and later released on the Wii's Virtual Console on August 13, 2007.",
+        "last_updated": "2020-12-25 21:33:31",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6041
+        ],
+        "genres": [
+          1,
+          2,
+          15,
+          27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 68070,
+        "game_title": "Metroid (Virtual Console)",
+        "release_date": "2011-10-01",
+        "platform": 4912,
+        "players": 1,
+        "overview": "It’s you against the evil Mother Brain in the thrilling battle of Metroid.\r\n\r\nThe first installment in the immensely successful Metroid series introduces us to the hideous title creatures and the slick, cybernetic bounty hunter Samus Aran. As Samus™, your mission is to penetrate the space pirates’ home planet of Zebes and keep them from destroying the galaxy with dangerous life forms known as Metroids. Metroid has all the high-tech weaponry, creepy tunnels and crawly alien creatures that anyone could ask for. With its deep and complex game play, excellent music and a rare sense of setting, it establishes a frightening ambience that will haunt and entertain you for a very long time.",
+        "last_updated": "2020-12-25 20:10:56",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          15,
+          27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 60220,
+        "game_title": "Metroid [Yellow Label]",
+        "release_date": "1992-01-01",
+        "platform": 7,
+        "players": 1,
+        "overview": "THIS IS THE METROID RE-RELEASE FROM 1992 WITH THE NEW YELLOW LABEL\r\n\r\nMetroid was released in North America for the NES in 1987. It was the first Metroid game to be released in the series. The game has a re-release in 2004 for Game Boy Advance then 3 years later in 2007 for the Virtual Console on the Wii. The gameplay of Metroid, which focuses on exploring and searching for upgrades to help collect items in previous areas, was a major influence for other games. It was also made popular for speedrunning to get fast time completions for the various endings. Metroid was praised for being one of the earliest games to have the protagonist as a woman. The player will need to beat the game in less than five hours to reveal this. The English manual even refers to the main character as \"he\". Game Informer ranked this game 7 out of 100 in their top 100 list.\r\n\r\nMetroid is first chronologically in the Metroid universe. The Space Pirates end up attacking a space research vessel owned by the Galactic Federation to steal Metroid craeture samples. A Metroid is a floating organism that is dangerous and latches onto another organism to drain their energy, killing the other organism. The plan that Space Pirates intend to do is replicate the Metroids by using beta rays on them. This will turn them into biological weapons that Space Pirates will use to kill any living beings opposing them. The Galactic Federation located the Space Pirate Base on planet Zebes while they were looking for the Metroids that were stolen. The Federation tried to attack the planet but were resisted by th Pirates, forcing a retreat.\r\nThe Federation decided to go with their last resort, which was to send a single bounty hunter to infiltrate the Pirate base to annihilate the Mother Brain. Mother Brain is a biomechanical creature controlling the Pirate Base and their defenses. The Federation chose to send Samus Aran, who is considered the best bounty hunter in existence. After landing on planet Zebes, Samus starts exploring the planet by traversing the caverns on Zebes. While on the mission, she runs into Kraid, who is a Space Pirate ally. She then later finds Ridley, who is the commander of the Space Pirates. She defeats both of them. Samus finally finds the Mother Brain and destroys it. Upon destroying the Mother Brain, Samus sete a bomb with a timer set at 99.9 seconds. She then escapes the planet, leaving the lair in pieces.\r\n\r\nThe player takes control of Samus Aran for the mission on Zebes. The planet is open world with the areas connected with elevators and doors. Samus begins with a power beam that is weak and her only firearm. She also has the ability to jump. While exploring the caverns, the player will find and collect upgrades that will give Samus enhanced abilities and better her weaponry and armor. These upgrades will allow Samus to access previous areas that were not accessible. Some of the upgrades the player can get for Samus include Morph Ball, allowing Samus to change to a ball and roll into small tunnels, the Bomb, which is used while in the ball form and sets a small explosive that can open a hidden floor or wall path, and the Screw Attack, which is a somersault attack that can destroy almost any enemy in their path.\r\n\r\nOn top of the common enemies, the player will encounter the two bosses Kraid and then Ridley. Both of them will need to be defeated, with Kraid coming first and Ridley second in the gameplay. When regular enemies are destroyed, they will leave ammo for missiles or energy pellets to refill Samus’s life. The player can upgrade Samus’s maximum health and carrying capacity by finding energy tanks marked with an E and missile tanks. Defeating bosses will also help with upgrades. When the player defeats both Kraid and Ridley, the pathway near the start of the game will open, giving access to the last area. While going to confront Mother Brain, the player will need to fend off Metroids by freezing them with the Ice Beam and then shooting them with missiles.",
+        "last_updated": "2018-10-29 15:28:48",
+        "rating": "Not Rated",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6051
+        ],
+        "genres": [
+          1,
+          2,
+          8,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 71003,
+        "game_title": "Metroid II: Return of Samus DX",
+        "release_date": "2013-03-07",
+        "platform": 41,
+        "players": 1,
+        "overview": "Metroid II: Return of Samus is an action-adventure game developed and published by Nintendo for the Game Boy. The first Metroid game for a handheld game console, it was released in North America in November 1991 and in Japan and Europe in 1992. The game follows bounty hunter Samus Aran on her mission to exterminate the Metroids from their home planet before the Space Pirates can obtain them. Players must find and destroy the Metroids to progress through the planet's tunnels.\r\n\r\nThis is basically an updated version of Dan Davis’ already excellent color file from the Game Boy Colorizer homepage. There are too many individual changes to list, but in general terms here are the changes in the updated version:\r\n\r\nAll inadvertently revealed secrets are once again secrets!\r\nAll mismatched tiles now match!\r\nSmall changes to a few sprites.\r\nVery small color changes to a few background elements.\r\nThere are a few minor glitches which are documented at the Metroid Evolution site.\r\n\r\nV 2.0 UPDATE\r\nSpikeman & Drakon fixed a bunch of stuff and made it so this hack runs on the real hardware. This patch runs start to finish on the real hardware without and major issues.\r\n\r\n",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "https://www.youtube.com/watch?v=ug0Kw3R8gFA",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6051
+        ],
+        "genres": [
+          1,
+          2,
+          8
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Metroid II DX",
+          "Metroid 2 DX"
+        ]
+      },
+      {
+        "id": 6771,
+        "game_title": "Metroid II: Return of Samus",
+        "release_date": "1991-11-01",
+        "platform": 4,
+        "players": 1,
+        "overview": "A Sinister Planet Threatens the Galaxy!\r\n\r\nSpace Hunter Samus Aran returns to battle a planet crawling with evil creatures bent on universal domination in this bigger than ever sequel to the NES classic, Metroid.\r\n\r\nTake control! Guide Samus through cavernous corridors, ancient ruins and alien traps. On the mysterious planet of the Metroids, you'll find artifacts of a lost civilization that grant amazing powers. Cut through creatures in a buzz-saw blur! Roll through hidden tunnels and climb sheer walls!\r\n\r\nA battery back-up allows you to save your progress as you fight to the heart of the planet and search for the merciless Metroid leaders. If you are a cunning explorer, you'll earn the best of several super endings.\r\n\r\nEnter this exciting Metroid sequel and experience the thrills of Game Boy like never before!",
+        "last_updated": "2018-07-06 22:32:55",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "uU4CjRMJtHI",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6051
+        ],
+        "genres": [
+          1,
+          2,
+          8,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Metroid 2: Return of Samus"
+        ]
+      },
+      {
+        "id": 2638,
+        "game_title": "Metroid Fusion",
+        "release_date": "2002-11-17",
+        "platform": 5,
+        "players": 1,
+        "overview": "Samus Aran returns in an all-new Metroid adventure!\r\n\r\nWhile lending mission support on planet SR388, interstellar bounty hunter Samus Aran is attacked by an X parasite, an organism with the ability to mimic the abilities of any creature it infects. Near death, Samus is saved by a vaccine made from the DNA of the last Metroid -- the X parasite's only natural predator. When the X spread to a research station in orbit around SR388, a weakened Samus is forced to exterminate them all ... or die trying.\r\n\r\nThe bonus features in Prime can be unlocked by linking between the game and Fusion via the Nintendo GameCube – Game Boy Advance link cable.",
+        "last_updated": "2018-08-11 15:01:11",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": null,
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6051
+        ],
+        "genres": [
+          1,
+          2,
+          8,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 48979,
+        "game_title": "Metroid Fusion",
+        "release_date": "2014-04-03",
+        "platform": 38,
+        "players": 1,
+        "overview": "Investigate the research station and destroy the X parasite and its army of copies!\r\n\r\nWhile lending mission support on planet SR388, interstellar bounty hunter Samus Aran is attacked by an X parasite, an organism with the ability to mimic the abilities of any creature it infects. Near death, Samus™ is saved by a vaccine made from the DNA of the last Metroid--the X parasite's only natural predator. When the X spread to a research station in orbit around SR388, a weakened Samus is forced to exterminate them all...or die trying.\r\n\r\nExperience classic Metroid game play as Samus explores the secret passages of a massive research station teeming with hostile life forms. Master moves such as clinging to ledges, leaping to high ladders, and firing new weapons like Diffusion Missiles. Along the way, collect classic power-ups like the Morph Ball, Screw Attack, and Wave Beam. All these skills will be useful when you encounter the SA-X, an unstoppable X mimicking Samus, which is on the loose and could be just around the corner...\r\n\r\nVirtual Console\r\nThis classic game is part of the Virtual Console service, which brings you great games created for consoles such as NES™, Super NES™ and Game Boy™ Advance. We hope you'll enjoy the new features (including off-TV play) that have been added to this title.",
+        "last_updated": "2018-08-11 15:01:11",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "ORJnXhI1dBM",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 83094,
+        "game_title": "Metroid Fusion (JP)",
+        "release_date": "2003-02-14",
+        "platform": 5,
+        "players": 1,
+        "overview": "",
+        "last_updated": null,
+        "rating": "T - Teen",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": null,
+        "genres": [
+          1,
+          2
+        ],
+        "publishers": null,
+        "alternates": null
+      },
+      {
+        "id": 68042,
+        "game_title": "Metroid Fusion (Virtual Console)",
+        "release_date": "2011-12-16",
+        "platform": 4912,
+        "players": 1,
+        "overview": "VIRTUAL CONSOLE 3DS AMBASSADOR PROGRAM EXCLUSIVE\r\n\r\nInvestigate the research station and destroy the X parasite and its army of copies!\r\n\r\nWhile lending mission support on planet SR388, interstellar bounty hunter Samus Aran is attacked by an X parasite, an organism with the ability to mimic the abilities of any creature it infects. Near death, Samus™ is saved by a vaccine made from the DNA of the last Metroid--the X parasite's only natural predator. When the X spread to a research station in orbit around SR388, a weakened Samus is forced to exterminate them all...or die trying.\r\n\r\nExperience classic Metroid game play as Samus explores the secret passages of a massive research station teeming with hostile life forms. Master moves such as clinging to ledges, leaping to high ladders, and firing new weapons like Diffusion Missiles. Along the way, collect classic power-ups like the Morph Ball, Screw Attack, and Wave Beam. All these skills will be useful when you encounter the SA-X, an unstoppable X mimicking Samus, which is on the loose and could be just around the corner...",
+        "last_updated": "2020-12-25 20:10:46",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          2,
+          27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 45372,
+        "game_title": "Metroid II: Return of Samus (Virtual Console)",
+        "release_date": "2011-11-24",
+        "platform": 4912,
+        "players": 1,
+        "overview": "Bounty Hunter Samus Aran faces off against the Metroid scourge once again in this epic sequel to the NES™ classic, Metroid. Take control to guide Samus™ through cavernous corridors, ancient ruins, and alien traps. On the mysterious planet SR388, you'll find artifacts of a lost civilization that grant amazing powers. Cut through creatures in a buzz-saw blur. Roll through hidden tunnels and climb sheer walls.\r\n\r\nFight to the heart of the planet and search for the merciless Metroid leaders. If you are a cunning explorer, you’'ll earn the best of several super endings. Enter this exciting Metroid sequel and experience the thrills of this beloved series.",
+        "last_updated": "2020-12-25 20:11:48",
+        "rating": "E - Everyone",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037
+        ],
+        "genres": [
+          1,
+          2,
+          15,
+          27
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 79492,
+        "game_title": "Super Metroid Phazon",
+        "release_date": "2011-12-28",
+        "platform": 6,
+        "players": 1,
+        "overview": "Super Metroid Phazon  is a Super Metroid hack. it features:\r\n\r\nNew rooms, items, enemies and graphics.\r\nThe difficultly level is easier than most SM hacks.",
+        "last_updated": null,
+        "rating": "Not Rated",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": null,
+        "genres": [
+          1,
+          2,
+          15,
+          28
+        ],
+        "publishers": null,
+        "alternates": [
+          "Metroid Phazon"
+        ]
+      },
+      {
+        "id": 80650,
+        "game_title": "Metroid Prime [New Play Control] (JPN)",
+        "release_date": "2009-02-19",
+        "platform": 9,
+        "players": 1,
+        "overview": "Samus makes her first leap into 3D with a first-person adventure for Nintendo Wii! Set sometime between the original Metroid and Metroid II, Samus tracks a newly-resurrected Meta-Ridley to the planet Tallon IV. Once there, she uncovers a malevolent Space Pirate plot that centers around harnessing a mysterious radioactive substance known as phazon. \r\nThis version of the game was released on the Wii in Japan under the Wii de asobu (New Play Control) label, which were Wiimote-compatible ports of Gamecube games, in NA it was released only in the Metroid Prime Trilogy Colection.",
+        "last_updated": "2020-12-30 01:45:07",
+        "rating": "Not Rated",
+        "coop": "No",
+        "youtube": "https://youtu.be/74Pt9aBpWo8",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          7160
+        ],
+        "genres": [
+          1,
+          2
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": [
+          "Metroid Prime"
+        ]
+      },
+      {
+        "id": 172,
+        "game_title": "Metroid Prime",
+        "release_date": "2002-11-17",
+        "platform": 2,
+        "players": 1,
+        "overview": "Ten years ago, beneath the surface of Planet Zebes, the mercenaries known as \"Space Pirates\" were defeated by interstellar bounty hunter Samus Aran. Descending to the very core of the pirate stronghold, Samus exterminated the energy based parasites called \"Metroids\" and defeated Mother Brain, the leader of the pirate hoarde.\r\n\r\nBut the Space Pirates were far from finished. Several pirate research vessels were orbiting Zebes when Samus fought on the surface below.\r\n\r\nAfter the fall of Mother Brain, the ships escaped, with the hope of finding enough resources to rebuild their forces and take their revenge.\r\n\r\nAfter discovering a possible pirate colony on planet Talon IV, Samus has once again prepared for war, hoping to end the Pirate threat forever.",
+        "last_updated": "2018-07-11 21:05:01",
+        "rating": "T - Teen",
+        "coop": "No",
+        "youtube": "https://www.youtube.com/watch?v=kLfkkSD15zQ",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          7160
+        ],
+        "genres": [
+          1,
+          2,
+          8,
+          15
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      },
+      {
+        "id": 69729,
+        "game_title": "Metroid Prime (Player's Choice)",
+        "release_date": "2002-11-17",
+        "platform": 2,
+        "players": 1,
+        "overview": "",
+        "last_updated": "2020-07-07 17:36:40",
+        "rating": "T - Teen",
+        "coop": "No",
+        "youtube": "",
+        "os": null,
+        "processor": null,
+        "ram": null,
+        "hdd": null,
+        "video": null,
+        "sound": null,
+        "developers": [
+          6037,
+          7160
+        ],
+        "genres": [
+          1,
+          2,
+          8
+        ],
+        "publishers": [
+          3
+        ],
+        "alternates": null
+      }
+    ]
+  },
+  "include": {
+    "boxart": {
+      "base_url": {
+        "original": "https://cdn.thegamesdb.net/images/original/",
+        "small": "https://cdn.thegamesdb.net/images/small/",
+        "thumb": "https://cdn.thegamesdb.net/images/thumb/",
+        "cropped_center_thumb": "https://cdn.thegamesdb.net/images/cropped_center_thumb/",
+        "medium": "https://cdn.thegamesdb.net/images/medium/",
+        "large": "https://cdn.thegamesdb.net/images/large/"
+      },
+      "data": {
+        "123": [
+          {
+            "id": 67611,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/123-1.jpg",
+            "resolution": "640x899"
+          },
+          {
+            "id": 119977,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/123-1.jpg",
+            "resolution": "800x1134"
+          }
+        ],
+        "172": [
+          {
+            "id": 206206,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/172-1.jpg",
+            "resolution": null
+          },
+          {
+            "id": 220563,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/172-1.jpg",
+            "resolution": null
+          }
+        ],
+        "2638": [
+          {
+            "id": 33461,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/2638-1.jpg",
+            "resolution": "1532x1370"
+          },
+          {
+            "id": 100218,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/2638-1.png",
+            "resolution": "1000x1001"
+          }
+        ],
+        "3112": [
+          {
+            "id": 6496,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/3112-1.jpg",
+            "resolution": "1533x1370"
+          },
+          {
+            "id": 6497,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/3112-1.jpg",
+            "resolution": "1530x1370"
+          }
+        ],
+        "6771": [
+          {
+            "id": 48712,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/6771-1.jpg",
+            "resolution": "1527x1370"
+          },
+          {
+            "id": 93007,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/6771-1.png",
+            "resolution": "1000x1000"
+          }
+        ],
+        "32222": [
+          {
+            "id": 84463,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/32222-1.jpg",
+            "resolution": "938x942"
+          }
+        ],
+        "45361": [
+          {
+            "id": 207839,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/45361-1.jpg",
+            "resolution": null
+          }
+        ],
+        "45372": [
+          {
+            "id": 118954,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/45372-1.jpg",
+            "resolution": "1000x1000"
+          }
+        ],
+        "48979": [
+          {
+            "id": 125645,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/48979-1.png",
+            "resolution": "140x134"
+          }
+        ],
+        "60220": [
+          {
+            "id": 200371,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/60220-1.jpg",
+            "resolution": null
+          },
+          {
+            "id": 200372,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/60220-1.jpg",
+            "resolution": null
+          }
+        ],
+        "68042": [
+          {
+            "id": 220476,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/68042-1.jpg",
+            "resolution": null
+          }
+        ],
+        "68070": [
+          {
+            "id": 220546,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/68070-1.jpg",
+            "resolution": null
+          }
+        ],
+        "69729": [
+          {
+            "id": 223611,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/69729-1.jpg",
+            "resolution": null
+          }
+        ],
+        "71003": [
+          {
+            "id": 225883,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/71003-1.jpg",
+            "resolution": null
+          }
+        ],
+        "71133": [
+          {
+            "id": 226074,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/71133-1.jpg",
+            "resolution": null
+          }
+        ],
+        "79492": [
+          {
+            "id": 255623,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/79492-1.jpg",
+            "resolution": null
+          }
+        ],
+        "80650": [
+          {
+            "id": 261635,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/80650-1.jpg",
+            "resolution": null
+          },
+          {
+            "id": 261736,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/80650-1.jpg",
+            "resolution": null
+          }
+        ],
+        "82344": [
+          {
+            "id": 268518,
+            "type": "boxart",
+            "side": "back",
+            "filename": "boxart/back/82344-1.jpg",
+            "resolution": null
+          },
+          {
+            "id": 272345,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/82344-1.jpg",
+            "resolution": null
+          }
+        ],
+        "83178": [
+          {
+            "id": 272540,
+            "type": "boxart",
+            "side": "front",
+            "filename": "boxart/front/83178-1.jpg",
+            "resolution": null
+          }
+        ]
+      }
+    },
+    "platform": {
+      "data": {
+        "2": {
+          "id": 2,
+          "name": "Nintendo GameCube",
+          "alias": "nintendo-gamecube"
+        },
+        "4": {
+          "id": 4,
+          "name": "Nintendo Game Boy",
+          "alias": "nintendo-gameboy"
+        },
+        "5": {
+          "id": 5,
+          "name": "Nintendo Game Boy Advance",
+          "alias": "nintendo-gameboy-advance"
+        },
+        "6": {
+          "id": 6,
+          "name": "Super Nintendo (SNES)",
+          "alias": "super-nintendo-snes"
+        },
+        "7": {
+          "id": 7,
+          "name": "Nintendo Entertainment System (NES)",
+          "alias": "nintendo-entertainment-system-nes"
+        },
+        "9": {
+          "id": 9,
+          "name": "Nintendo Wii",
+          "alias": "nintendo-wii"
+        },
+        "38": {
+          "id": 38,
+          "name": "Nintendo Wii U",
+          "alias": "nintendo-wii-u"
+        },
+        "41": {
+          "id": 41,
+          "name": "Nintendo Game Boy Color",
+          "alias": "nintendo-gameboy-color"
+        },
+        "4912": {
+          "id": 4912,
+          "name": "Nintendo 3DS",
+          "alias": "nintendo-3ds"
+        },
+        "4936": {
+          "id": 4936,
+          "name": "Famicom Disk System",
+          "alias": "fds"
+        }
+      }
+    }
+  },
+  "pages": {
+    "previous": null,
+    "current": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Metroid&fields=players%2Cpublishers%2Cgenres%2Coverview%2Clast_updated%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates&include=boxart%2Cplatform&page=1",
+    "next": "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Metroid&fields=players%2Cpublishers%2Cgenres%2Coverview%2Clast_updated%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates%2Crating%2Cplatform%2Ccoop%2Cyoutube%2Cos%2Cprocessor%2Cram%2Chdd%2Cvideo%2Csound%2Calternates&include=boxart%2Cplatform&page=2"
+  },
+  "remaining_monthly_allowance": 0,
+  "extra_allowance": 5862,
+  "allowance_refresh_timer": null
+}

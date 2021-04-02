@@ -73,6 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\SMB3GamesDBResponse.json" />
+    <AndroidAsset Include="Assets\MetroidGamesDBResponse.json" />
+    <AndroidAsset Include="Assets\DeveloperJson.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
