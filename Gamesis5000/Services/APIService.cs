@@ -16,8 +16,7 @@ namespace Gamesis5000.Services
   public class APIService
   {
     HttpClient client;
-    string longUrl = "https://api.thegamesdb.net/v1.1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=Super%20Mario%20Bros.%203&fields=platform%2Cyoutube%2Cgenres&include=boxart%2Cplatform";
-    //string BaseUrl = "https://api.thegamesdb.net/v1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=super%20Metroid&filter%5Bplatform%5D=6";
+    string longUrl = "";
     //string byTitle = 
     string jsonString = "";
 
@@ -29,6 +28,7 @@ namespace Gamesis5000.Services
     public APIService()
     {
       client = new HttpClient();
+      Task.Run(async () => longUrl = await EnvRead());
     }   
     public async Task<string> QueryDatabase()
     {
@@ -41,6 +41,28 @@ namespace Gamesis5000.Services
         Debug.WriteLine($"[Dev Output] {jsonString}");
       }
       return jsonOutputString;
+    }
+    public async Task<string> EnvRead()
+    {      
+      string textOutput = "";      
+      using (var stream = await FileSystem.OpenAppPackageFileAsync(@"settings.txt"))
+      {
+        using (var reader = new StreamReader(stream))
+        {
+          while (textOutput != null) {
+            textOutput = reader.ReadLine();
+            string substring = textOutput.Substring(0, 11);
+            if (textOutput.Substring(0, 11) == "GAMESDB_API")
+            {
+              break;
+            }
+          }
+        }
+        if (textOutput == null) { textOutput = ""; }
+        else { textOutput = textOutput.Substring(13); }
+      }
+      //      
+      return textOutput;
     }
     public async Task<string> SampleFileRead()
     {
