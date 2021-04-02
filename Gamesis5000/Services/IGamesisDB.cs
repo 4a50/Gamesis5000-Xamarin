@@ -14,9 +14,10 @@ namespace Gamesis5000.Services
     Task<bool> UpdateGameAsync(Game game);
     Task<bool> DeleteGameAsync(int ID);
     Task<bool> DatabaseMasterReset();
-    Task<bool> RefreshDeveloper();
-    Task<bool> RefreshGameSystemTable();
-    Task<bool> RefreshGenresTable();
-    Task<bool> RefreshPublishersTable();
+    Task<int> RefreshDeveloper(bool fromFile);
+    Task<bool> RefreshGameSystemTable(bool fromFile);
+    Task<bool> RefreshGenresTable(bool fromFile);
+    Task<bool> RefreshPublishersTable(bool fromFile);
+    Task<string> GetJsonStringFromFile(string fileType);
   }
 }

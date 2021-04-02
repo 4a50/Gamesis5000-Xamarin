@@ -49,5 +49,12 @@ namespace Gamesis5000.Views
     {
       await Navigation.PushAsync(new HomePage());
     }
+
+    async void OnDevRefreshPollClick(object sender, EventArgs e)
+    {
+      int numRowsAdded = await _vm.RefreshReference("Developers");
+      await DisplayAlert("Action Completed", $"{numRowsAdded} records have been added", "Sweet!");
+
+    }
   }
 }
