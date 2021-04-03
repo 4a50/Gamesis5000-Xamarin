@@ -22,6 +22,11 @@ namespace Gamesis5000.Data
     {
       //Ensure the Database is registered as a dependency in the App.cs file.
       string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GamesisDB.db3");
+      
+      //DropTheTableToCreateANewOne. 
+      Task.Run(async () => await database.DropTableAsync<Genres>());
+      //
+      
       database = new SQLiteAsyncConnection(path);
       database.CreateTableAsync<Game>().Wait();
       database.CreateTableAsync<Developers>().Wait();
@@ -145,6 +150,7 @@ namespace Gamesis5000.Data
       }
     }
 
+    //TODO: Use Generics to streamline code for refreshing
     public async Task<int> RefreshDeveloper(bool fromFile = true)
     {
       List<Developers> devList = new List<Developers>();
@@ -196,23 +202,114 @@ namespace Gamesis5000.Data
         return 0;
       }
     }
+    public async Task<int> RefreshGenres(bool fromFile = true)
+    {
+      List<Genres> devList = new List<Genres>();
+      if (fromFile)
+      {
+        try
+        {
+          await database.DeleteAllAsync<Genres>();
+          string json = await GetJsonStringFromFile("GenresJson.json");
+          JObject jsonParsed = JObject.Parse(json);
+          List<Genres> referenceList = new List<Genres>();
+          var tokenSelected = jsonParsed.SelectToken("data").SelectToken("genres")["1"]["name"];
+          int len = jsonParsed.SelectToken("data").SelectToken("genres").Count();
+          for (int i = 1; i <= len; i++)
+          {
+            Debug.WriteLine(i);
+            //Debug.WriteLine($"[Dev Note] {i}");
+            string number = i.ToString();
+            try
+            {
+              var selectedData = jsonParsed.SelectToken("data").SelectToken("genres")[number];
+              referenceList.Add(new Genres
+              {
+                Name = (string)selectedData["name"],
+                GenreId = (int)selectedData["id"]
+              });
+            }
+            catch
+            {
+              Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+            }
+          }
+          await database.InsertAllAsync(referenceList);
+          Genres nameoftheDev = await database.Table<Genres>()
+          .Where(i => i.Name == "Quiz")
+          .FirstOrDefaultAsync();
+          Debug.WriteLine("Proof the record exists!: " + nameoftheDev.Name);
 
 
-    public Task<bool> RefreshGameSystemTable(bool fromFile = true)
+
+          return await database.Table<Genres>().CountAsync();
+        }
+        catch (Exception e)
+        {
+          Debug.WriteLine($"Unable to Create Genres Object: {e.Message}");
+          return -1;
+        }
+      }
+      else
+      {
+        Debug.WriteLine($"Pull From the API placeholder");
+        return 0;
+      }
+    }
+    public Task<int> RefreshGameSystemTable(bool fromFile = true)
     {
       throw new NotImplementedException();
     }
-
-    public Task<bool> RefreshGenresTable(bool fromFile = true)
+    public async Task<int> RefreshPublishers(bool fromFile = true)
     {
-      throw new NotImplementedException();
+      List<Publishers> devList = new List<Publishers>();
+      if (fromFile)
+      {
+        try
+        {
+          await database.DeleteAllAsync<Publishers>();
+          string json = await GetJsonStringFromFile("PublishersJson.json");
+          JObject jsonParsed = JObject.Parse(json);
+          List<Publishers> referenceList = new List<Publishers>();
+          var tokenSelected = jsonParsed.SelectToken("data").SelectToken("publishers")["1"]["name"];
+          int len = jsonParsed.SelectToken("data").SelectToken("publishers").Count();
+          Debug.WriteLine($"Publisher len: {len}");
+          for (int i = 1; i <= len; i++)
+          {           
+            string number = i.ToString();
+            try
+            {
+              var selectedData = jsonParsed.SelectToken("data").SelectToken("publishers")[number];
+              referenceList.Add(new Publishers
+              {
+                Name = (string)selectedData["name"],
+                PubId = (int)selectedData["id"]
+              });
+            }
+            catch
+            {
+             Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+            }
+          }
+          await database.InsertAllAsync(referenceList);
+          Publishers nameoftheDev = await database.Table<Publishers>()
+          .Where(i => i.Name == "Valve Corporation")
+          .FirstOrDefaultAsync();
+          Debug.WriteLine("Proof the record exists!: " + nameoftheDev.Name);
+          return await database.Table<Publishers>().CountAsync();
+        }
+        catch (Exception e)
+        {
+          Debug.WriteLine($"Unable to Create Publishers Object: {e.Message}");
+          return -1;
+        }
+      }
+      else
+      {
+        Debug.WriteLine($"Pull From the API placeholder");
+        return 0;
+      }
     }
-
-    public Task<bool> RefreshPublishersTable(bool fromFile = true)
-    {
-      throw new NotImplementedException();
-    }
-
     public async Task<string> GetJsonStringFromFile(string fileName)
     {
       string stringOut = "";

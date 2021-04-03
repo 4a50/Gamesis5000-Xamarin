@@ -71,9 +71,13 @@ namespace Gamesis5000.ViewModels
     {      
       return await apiServ.QueryDatabase();
     }
-    async public Task<int> RefreshReference(string refItem)
+    async public Task<int[]> RefreshReference()
     {
-      return await GamesDB.RefreshDeveloper(true);
+      return new int[] {
+      await GamesDB.RefreshDeveloper(true), 
+      await GamesDB.RefreshGenres(true),
+      await GamesDB.RefreshPublishers(true)
+    };
     }
   }
 }

@@ -9,7 +9,7 @@ namespace Gamesis5000.Models
   {
     [PrimaryKey, AutoIncrement]
     public int IdentityLookup {get; set;}
-    public string GenreId { get; set; }
+    public int GenreId { get; set; }
     public string Name { get; set; }
 
   }
