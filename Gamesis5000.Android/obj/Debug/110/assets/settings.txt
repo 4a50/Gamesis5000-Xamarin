@@ -1,1 +1,1 @@
-﻿GAMESDB_API: https://api.thegamesdb.net/v1/Games/ByGameName?apikey=4c9d180c15bf5fe3e896c204472a85c752dddb4fcdf0ba291b00b037af1c1910&name=super%20Metroid&filter%5Bplatform%5D=6
+﻿GAMESDB_API: 48dcad56c098b97ed66e91d7aa032ac3054ce9aeb88a33720a051cd2133f3daa

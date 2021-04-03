@@ -53,8 +53,10 @@ namespace Gamesis5000.Views
     async void OnDevRefreshPollClick(object sender, EventArgs e)
     {
 
-      int numRowsAdded = await _vm.RefreshReference("Developers");
-      await DisplayAlert("Action Completed", $"{numRowsAdded} records have been added", "Sweet!");
+      int[] numRowsAdded = await _vm.RefreshReference();
+      
+      string display = $"{numRowsAdded[0]} records added to Developers\n{numRowsAdded[1]} records added to Genres\n{numRowsAdded[2]} records added to Publishers";
+      await DisplayAlert("Action Completed", display, "Sweet!");
 
     }
   }
