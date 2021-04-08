@@ -256,9 +256,51 @@ namespace Gamesis5000.Data
         return 0;
       }
     }
-    public Task<int> RefreshGameSystemTable(bool fromFile = true)
-    {
-      throw new NotImplementedException();
+    public async Task<int> RefreshGameSystem(bool fromFile = true)
+    {      
+      if (fromFile)
+      {
+      await database.DeleteAllAsync<GameSystem>();
+      string json = await GetJsonStringFromFile("PublishersJson.json");
+      JObject jsonParsed = JObject.Parse(json);
+      List<GameSystem> referenceList = new List<GameSystem>();
+      int len = jsonParsed.SelectToken("data").SelectToken("platforms").Count();
+      for (int i = 1; i <= len; i++)
+      { 
+        string number = i.ToString();
+        try
+        {
+          var selectedData = jsonParsed.SelectToken("data").SelectToken("platforms")[number];
+          referenceList.Add(new GameSystem
+          {
+            //Publisher = (game["publishers"] == null ? new List<int> { -1 } : game["publishers"] 
+            Name = (string)selectedData["name"],
+            GsId = (int)selectedData["id"],
+            Developer = (selectedData["developer"] == null ? "" : (string)selectedData["developer"]),
+            Manufacturer = (selectedData["manufacturer"] == null ? "" : (string)selectedData["manufacturer"]),
+            Media = (selectedData["media"] == null ? "" : (string)selectedData["media"]),
+            Cpu = (selectedData["cpu"] == null ? "" : (string)selectedData["cpu"]),
+            Memory = (selectedData["memory"] == null ? "" : (string)selectedData["memory"]),
+            Graphics = (selectedData["graphics"] == null ? "" : (string)selectedData["graphics"]),
+            Sound = (selectedData["sound"] == null ? "" : (string)selectedData["sound"]),
+            MaxControllers = (selectedData["maxcontrollers"] == null ? "" : (string)selectedData["maxcontrollers"]),
+            Display = (selectedData["display"] == null ? "" : (string)selectedData["display"]),
+            Overview = (selectedData["overview"] == null ? "" : (string)selectedData["overview"]),
+            VideoUrl = (selectedData["youtube"] == null ? "" : (string)selectedData["youtube"])
+          });
+        }
+        catch
+        {
+          Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+        }
+      }
+
+      return 0;
+    }
+    else {
+      Debug.WriteLine("PlaceHolder for API get information");
+      return 0;
+        }
     }
     public async Task<int> RefreshPublishers(bool fromFile = true)
     {
@@ -309,7 +351,7 @@ namespace Gamesis5000.Data
         Debug.WriteLine($"Pull From the API placeholder");
         return 0;
       }
-    }
+    }    
     public async Task<string> GetJsonStringFromFile(string fileName)
     {
       string stringOut = "";
