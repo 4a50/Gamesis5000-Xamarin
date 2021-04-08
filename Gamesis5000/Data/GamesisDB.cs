@@ -153,6 +153,7 @@ namespace Gamesis5000.Data
     //TODO: Use Generics to streamline code for refreshing
     public async Task<int> RefreshDeveloper(bool fromFile = true)
     {
+      Debug.WriteLine("Refreshing Developer List");
       List<Developers> devList = new List<Developers>();
       if (fromFile)
       {
@@ -204,6 +205,7 @@ namespace Gamesis5000.Data
     }
     public async Task<int> RefreshGenres(bool fromFile = true)
     {
+      Debug.WriteLine("Refreshing Genres List");
       List<Genres> devList = new List<Genres>();
       if (fromFile)
       {
@@ -257,11 +259,12 @@ namespace Gamesis5000.Data
       }
     }
     public async Task<int> RefreshGameSystem(bool fromFile = true)
-    {      
+    {
+      Debug.WriteLine("Refreshing GameSystem List");
       if (fromFile)
       {
       await database.DeleteAllAsync<GameSystem>();
-      string json = await GetJsonStringFromFile("PublishersJson.json");
+      string json = await GetJsonStringFromFile("GameSystemJson.json");
       JObject jsonParsed = JObject.Parse(json);
       List<GameSystem> referenceList = new List<GameSystem>();
       int len = jsonParsed.SelectToken("data").SelectToken("platforms").Count();
@@ -295,7 +298,7 @@ namespace Gamesis5000.Data
         }
       }
 
-      return 0;
+      return referenceList;
     }
     else {
       Debug.WriteLine("PlaceHolder for API get information");
@@ -304,6 +307,7 @@ namespace Gamesis5000.Data
     }
     public async Task<int> RefreshPublishers(bool fromFile = true)
     {
+      Debug.WriteLine("Refreshing Publisher List");
       List<Publishers> devList = new List<Publishers>();
       if (fromFile)
       {
