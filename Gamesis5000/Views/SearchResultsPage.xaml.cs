@@ -54,10 +54,12 @@ namespace Gamesis5000.Views
     {
 
       int[] numRowsAdded = await _vm.RefreshReference();
-      
-      string display = $"{numRowsAdded[0]} records added to Developers\n{numRowsAdded[1]} records added to Genres\n{numRowsAdded[2]} records added to Publishers";
-      await DisplayAlert("Action Completed", display, "Sweet!");
-
+      StringBuilder sb = new StringBuilder();
+      sb.AppendLine($"{numRowsAdded[0]} records added to Developers");
+      sb.AppendLine($"{numRowsAdded[1]} records added to Genres");
+      sb.AppendLine($"{numRowsAdded[2]} records added to Publishers");
+      sb.AppendLine($"{numRowsAdded[3]} records added to Game Systems");
+      await DisplayAlert("Action Completed", sb.ToString(), "Sweet!");
     }
   }
 }

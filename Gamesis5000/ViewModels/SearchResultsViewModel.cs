@@ -76,7 +76,8 @@ namespace Gamesis5000.ViewModels
       return new int[] {
       await GamesDB.RefreshDeveloper(true), 
       await GamesDB.RefreshGenres(true),
-      await GamesDB.RefreshPublishers(true)
+      await GamesDB.RefreshPublishers(true),
+      await GamesDB.RefreshGameSystem(true)
     };
     }
   }

@@ -153,6 +153,7 @@ namespace Gamesis5000.Data
     //TODO: Use Generics to streamline code for refreshing
     public async Task<int> RefreshDeveloper(bool fromFile = true)
     {
+      Debug.WriteLine("Refreshing Developer List");
       List<Developers> devList = new List<Developers>();
       if (fromFile)
       {
@@ -204,6 +205,7 @@ namespace Gamesis5000.Data
     }
     public async Task<int> RefreshGenres(bool fromFile = true)
     {
+      Debug.WriteLine("Refreshing Genres List");
       List<Genres> devList = new List<Genres>();
       if (fromFile)
       {
@@ -231,7 +233,7 @@ namespace Gamesis5000.Data
             }
             catch
             {
-              Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+              //Debug.WriteLine($"Entry {i} Not Found.  Skipping");
             }
           }
           await database.InsertAllAsync(referenceList);
@@ -256,12 +258,73 @@ namespace Gamesis5000.Data
         return 0;
       }
     }
-    public Task<int> RefreshGameSystemTable(bool fromFile = true)
+    public async Task<int> RefreshGameSystem(bool fromFile = true)
     {
-      throw new NotImplementedException();
+      Debug.WriteLine("Refreshing GameSystem List");
+      if (fromFile)
+      {
+        try {
+          await database.DeleteAllAsync<GameSystem>();
+          string json = await GetJsonStringFromFile("GameSystemJson.json");
+          JObject jsonParsed = JObject.Parse(json);
+          List<GameSystem> referenceList = new List<GameSystem>();
+          
+          var allJson = jsonParsed
+            .SelectToken("data")
+            .SelectToken("platforms")
+            .ToArray();
+          var idOfFirstEntry = (string)allJson[0].Values().ToList()[1];
+          
+          for (int i = 1; i <= allJson.Length; i++)
+          {
+            try
+            {
+            var gameSysEntry = allJson[i].Values().ToList();
+              referenceList.Add(new GameSystem
+              {
+                //Publisher = (game["publishers"] == null ? new List<int> { -1 } : game["publishers"] 
+                Name = (string)gameSysEntry[1],
+                GsId = (int)gameSysEntry[0],
+                Developer = ((string)gameSysEntry[6] == null ? "" : (string)gameSysEntry[6]),
+                Manufacturer = ((string)gameSysEntry[7] == null ? "" : (string)gameSysEntry[7]),
+                Media = ((string)gameSysEntry[8] == null ? "" : (string)gameSysEntry[8]),
+                Cpu = ((string)gameSysEntry[9] == null ? "" : (string)gameSysEntry[9]),
+                Memory = (gameSysEntry[10] == null ? "" : (string)gameSysEntry[10]),
+                Graphics = (gameSysEntry[11] == null ? "" : (string)gameSysEntry[11]),
+                Sound = (gameSysEntry[12] == null ? "" : (string)gameSysEntry[12]),
+                MaxControllers = (gameSysEntry[13] == null ? "" : (string)gameSysEntry[13]),
+                Display = (gameSysEntry[14] == null ? "" : (string)gameSysEntry[14]),
+                Overview = (gameSysEntry[15] == null ? "" : (string)gameSysEntry[15]),
+                VideoUrl = (gameSysEntry[16] == null ? "" : (string)gameSysEntry[16])
+              });
+            }
+            catch
+            {
+              //Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+            }
+          }
+          await database.InsertAllAsync(referenceList);
+          GameSystem nameoftheGameSys = await database.Table<GameSystem>()
+          .Where(i => i.Name == "Nintendo Entertainment System (NES)")
+          .FirstOrDefaultAsync();
+          Debug.WriteLine("Proof the record exists!: " + nameoftheGameSys.Name);
+          return await database.Table<GameSystem>().CountAsync();
+        }
+        catch (Exception e)
+        {
+          Debug.WriteLine($"Unable to Create GameSystem Object: {e.Message}");
+          return -1;
+        }
+        }
+      else {
+        Debug.WriteLine("PlaceHolder for API get information");
+        return 0;
+      }
+
     }
     public async Task<int> RefreshPublishers(bool fromFile = true)
     {
+      Debug.WriteLine("Refreshing Publisher List");
       List<Publishers> devList = new List<Publishers>();
       if (fromFile)
       {
@@ -288,7 +351,7 @@ namespace Gamesis5000.Data
             }
             catch
             {
-             Debug.WriteLine($"Entry {i} Not Found.  Skipping");
+             //Debug.WriteLine($"Entry {i} Not Found.  Skipping");
             }
           }
           await database.InsertAllAsync(referenceList);
@@ -309,7 +372,7 @@ namespace Gamesis5000.Data
         Debug.WriteLine($"Pull From the API placeholder");
         return 0;
       }
-    }
+    }    
     public async Task<string> GetJsonStringFromFile(string fileName)
     {
       string stringOut = "";
