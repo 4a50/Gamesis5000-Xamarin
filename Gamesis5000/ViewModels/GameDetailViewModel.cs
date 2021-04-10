@@ -7,9 +7,10 @@ namespace Gamesis5000.ViewModels
 {
   public class GameDetailViewModel : BaseViewModel
   {
-    Game game { get; set; }
+    public Game game { get; set; }    
     public GameDetailViewModel()
     {
+      
       game = new Game();
     }
     public GameDetailViewModel(Game paramGame)

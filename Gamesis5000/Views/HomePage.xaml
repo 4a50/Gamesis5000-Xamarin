@@ -133,14 +133,19 @@
         <Button Text="View Inventory"                    
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type local:ViewInventoyPage}"
-                    />
-               
-            <Button Text="Inventory Validation"
-                    Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type local:InvValidPage}">
-                
-            </Button>
-            
+                    />        
+
+        <Button Text="Inventory Validation"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Type local:InvValidPage}"
+                />
+        <Button Text="Game Detail Page"
+                BackgroundColor="Purple"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Type local:GameDetailPage}"/>
+
+
+
         <BoxView
             BackgroundColor="Transparent"
             HeightRequest="100"

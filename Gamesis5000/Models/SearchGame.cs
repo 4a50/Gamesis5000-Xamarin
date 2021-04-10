@@ -6,7 +6,7 @@ namespace Gamesis5000.Models
 {
   public class SearchGame
   {
-    public int ID { get; set; }
+    //public int ID { get; set; }
     public int TitleId { get; set; }
     public string Name { get; set; }
     public int GameSystem { get; set; }
@@ -17,8 +17,9 @@ namespace Gamesis5000.Models
     public string BoxArtUrlFront { get; set; }
     public string BoxArtUrlBack { get; set; }
     public string BoxArtUrlThumb { get; set; }
-    public string VideoUrl { get; set; }
-    public string DetailBlurb { get; set; }
+    public string VideoUrl { get; set; }    
     public DateTime ReleaseDate { get; set; }
+    //Update to remove DetailBlurb
+    public string DetailBlurb { get; set; }
   }
 }

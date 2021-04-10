@@ -9,6 +9,7 @@ namespace Gamesis5000.Models
   {
     [PrimaryKey, AutoIncrement]
     public int ID { get; set; }
+    public int GameID { get; set; }
     public string Name { get; set; }
     public string GameSystem { get; set; }
     public string Genre { get; set; }

@@ -100,8 +100,9 @@ namespace Gamesis5000.Services
             .ToList(),
             Publisher = (game["publishers"] == null ? new List<int> { -1 } : game["publishers"]            
             .Select(p => (int)p)
-            .ToList())
+            .ToList()),            
           }).ToList();
+
         Debug.WriteLine($"[Dev Note] Post-Conversion jsonGameListLength: {jsonGameList.Count}");
       }
       catch(Exception e)
@@ -111,7 +112,7 @@ namespace Gamesis5000.Services
       Console.WriteLine("Nothing to see here");
       return jsonGameList;
     }
-    string UpdateReferenceDatabase(string dbase, int code)
+    string  BoxArtUrl(JObject jsonObj, List<SearchGame> gameList)
     {
       
       return "";

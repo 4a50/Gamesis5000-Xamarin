@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gamesis5000.Views.GameDetailPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="AccentText">#000000</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+        <Grid
+            Padding="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/><!--0-->
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/><!--13-->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>                
+                <ColumnDefinition Width="*"/><!--0-->
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/><!--5-->
+            </Grid.ColumnDefinitions>
+            <Image Source=""
+                   
+                   BackgroundColor="Fuchsia"
+                   Grid.RowSpan="10"
+                   Grid.ColumnSpan="5"/>
+
+
+            <Label Text="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   Grid.Row="0"/>
+            <Label Text="Super Mario Something Or Another "
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   HorizontalOptions="StartAndExpand"
+                   Grid.Row="1"
+                   Grid.RowSpan="2"/>
+            <Label Text="Game System"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"                   
+                   BackgroundColor="Azure"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   Grid.Row="3"/>
+            <Label Text="Super Nintendo Entertainment System"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   HorizontalOptions="StartAndExpand"
+                   Grid.Row="4"
+                   Grid.RowSpan="2"/>
+            <Label Text="Developed"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"                   
+                   BackgroundColor="Azure"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   Grid.Row="6"/>
+            <Label Text="Square Enix Ltd"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   HorizontalOptions="StartAndExpand"
+                   Grid.Row="7"                   
+                   />
+            <Label Text="Published"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"                   
+                   BackgroundColor="Azure"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   Grid.Row="8"/>
+            <Label Text="Nintendo, of Course"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="4"
+                   HorizontalOptions="StartAndExpand"
+                   Grid.Row="9"/>
+
+            <Label 
+                Grid.Row="10"
+                Grid.ColumnSpan="9"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"
+                Text="Overview"/>
+
+            <BoxView Grid.Row="11"
+                     Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="9"
+                BackgroundColor="lightgray"                     
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>            
+            <Label Grid.Row="11"
+                    Grid.RowSpan="2"
+                   Padding="5,5,5,5"
+            Text="asdflasdflkjal;sdkjf;laksdjf;lakdsjkasldkjf;alsdkjf;flja;lsdkjfla;djfl;akdsjfasdfasdf"
+            Grid.Column="0"
+            Grid.ColumnSpan="9"
+            TextColor="Black"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"/>
+            
+                <Button
+                Text="Add"
+                Grid.Row="13"
+                Grid.ColumnSpan="4"/>
+            <Button
+                Text="Remove"       
+                
+                Grid.Row="13"
+                Grid.Column="5"
+                Grid.ColumnSpan="4"/>
+            
+            <!-- Visualization Only-->
+            <!--<BoxView Grid.Row="8"
+                         Grid.Column="0"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="1"
+                         BackgroundColor="Orange"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="2"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="3"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="4"
+                         BackgroundColor="Orange"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="5"
+                         BackgroundColor="Black"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="6"
+                         BackgroundColor="Orange"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="7"
+                         BackgroundColor="Orange"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8"
+                         Grid.Column="8"
+                         BackgroundColor="Orange"                         
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"/>
+            -->
+            
+        </Grid>
+            <!--<BoxView BackgroundColor="PaleGreen"/> -->
+            <Label
+                   Text="(c)2021 4a50 Software"
+                   BackgroundColor="{StaticResource Accent}" 
+                   FontSize="Large"                   
+                   VerticalOptions="FillAndExpand"                       
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource AccentText}"
+                   />
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
