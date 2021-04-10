@@ -107,17 +107,20 @@
                 Grid.ColumnSpan="9"
                 BackgroundColor="lightgray"                     
                 VerticalOptions="FillAndExpand"
-                HorizontalOptions="FillAndExpand"/>            
-            <Label Grid.Row="11"
-                    Grid.RowSpan="2"
+                HorizontalOptions="FillAndExpand"/>
+                <ScrollView Grid.Row="11"
+                            Grid.RowSpan="2"
+                    Grid.Column="0"
+            Grid.ColumnSpan="9">
+                    <Label 
+                    
                    Padding="5,5,5,5"
-            Text="asdflasdflkjal;sdkjf;laksdjf;lakdsjkasldkjf;alsdkjf;flja;lsdkjfla;djfl;akdsjfasdfasdf"
-            Grid.Column="0"
-            Grid.ColumnSpan="9"
+            Text="THIS IS THE METROID RE-RELEASE FROM 1992 WITH THE NEW YELLOW LABEL Metroid was released in North America for the NES in 1987. It was the first Metroid game to be released in the series. The game has a re-release in 2004 for Game Boy Advance then 3 years later in 2007 for the Virtual Console on the Wii. The gameplay of Metroid, which focuses on exploring and searching for upgrades to help collect items in previous areas, was a major influence for other games. It was also made popular for speedrunning to get fast time completions for the various endings. Metroid was praised for being one of the earliest games to have the protagonist as a woman. The player will need to beat the game in less than five hours to reveal this. The English manual even refers to the main character as . Game Informer ranked this game 7 out of 100 in their top 100 list.\r\n\r\nMetroid is first chronologically in the Metroid universe. The Space Pirates end up attacking a space research vessel owned by the Galactic Federation to steal Metroid craeture samples. A Metroid is a floating organism that is dangerous and latches onto another organism to drain their energy, killing the other organism. The plan that Space Pirates intend to do is replicate the Metroids by using beta rays on them. This will turn them into biological weapons that Space Pirates will use to kill any living beings opposing them. The Galactic Federation located the Space Pirate Base on planet Zebes while they were looking for the Metroids that were stolen. The Federation tried to attack the planet but were resisted by th Pirates, forcing a retreat.\r\nThe Federation decided to go with their last resort, which was to send a single bounty hunter to infiltrate the Pirate base to annihilate the Mother Brain. Mother Brain is a biomechanical creature controlling the Pirate Base and their defenses. The Federation chose to send Samus Aran, who is considered the best bounty hunter in existence. After landing on planet Zebes, Samus starts exploring the planet by traversing the caverns on Zebes. While on the mission, she runs into Kraid, who is a Space Pirate ally. She then later finds Ridley, who is the commander of the Space Pirates. She defeats both of them. Samus finally finds the Mother Brain and destroys it. Upon destroying the Mother Brain, Samus sete a bomb with a timer set at 99.9 seconds. She then escapes the planet, leaving the lair in pieces.\r\n\r\nThe player takes control of Samus Aran for the mission on Zebes. The planet is open world with the areas connected with elevators and doors. Samus begins with a power beam that is weak and her only firearm. She also has the ability to jump. While exploring the caverns, the player will find and collect upgrades that will give Samus enhanced abilities and better her weaponry and armor. These upgrades will allow Samus to access previous areas that were not accessible. Some of the upgrades the player can get for Samus include Morph Ball, allowing Samus to change to a ball and roll into small tunnels, the Bomb, which is used while in the ball form and sets a small explosive that can open a hidden floor or wall path, and the Screw Attack, which is a somersault attack that can destroy almost any enemy in their path.\r\n\r\nOn top of the common enemies, the player will encounter the two bosses Kraid and then Ridley. Both of them will need to be defeated, with Kraid coming first and Ridley second in the gameplay. When regular enemies are destroyed, they will leave ammo for missiles or energy pellets to refill Samus's life. The player can upgrade Samus's maximum health and carrying capacity by finding energy tanks marked with an E and missile tanks. Defeating bosses will also help with upgrades. When the player defeats both Kraid and Ridley, the pathway near the start of the game will open, giving access to the last area. While going to confront Mother Brain, the player will need to fend off Metroids by freezing them with the Ice Beam and then shooting them with missiles."
+            
             TextColor="Black"
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand"/>
-            
+                </ScrollView>
                 <Button
                 Text="Add"
                 Grid.Row="13"
