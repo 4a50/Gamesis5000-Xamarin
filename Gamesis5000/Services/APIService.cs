@@ -82,6 +82,7 @@ namespace Gamesis5000.Services
     public List<SearchGame> JsonToSearchGameList(string jsonString)
     {      
       JObject jsonObj = JObject.Parse(jsonString);
+      Dictionary<string, JArray> boxArtItems = jsonObj["include"]["boxart"]["data"].ToObject<Dictionary<string, JArray>>();      
       List<SearchGame> jsonGameList = new List<SearchGame>();
       try
       {
@@ -95,27 +96,45 @@ namespace Gamesis5000.Services
             Genre = game["genres"].Select(g => (int)g).ToList(),
             GameSystem = (int)game["platform"],
             Description = (string)game["overview"],
-            Developer = game["developers"]            
-            .Select(d => (int)d)            
+            Developer = game["developers"]
+            .Select(d => (int)d)
             .ToList(),
-            Publisher = (game["publishers"] == null ? new List<int> { -1 } : game["publishers"]            
+            Publisher = (game["publishers"] == null ? new List<int> { -1 } : game["publishers"]
             .Select(p => (int)p)
             .ToList()),            
           }).ToList();
 
+        BoxArtUrl(jsonObj, jsonGameList);
         Debug.WriteLine($"[Dev Note] Post-Conversion jsonGameListLength: {jsonGameList.Count}");
       }
       catch(Exception e)
       {
-        Debug.WriteLine($"[Dev Error] jsonGameList Errored: {e.Message}");
+        Debug.WriteLine($"[Dev Error] jsonGameList Error: {e.Message}");
       }
       Console.WriteLine("Nothing to see here");
       return jsonGameList;
     }
-    string  BoxArtUrl(JObject jsonObj, List<SearchGame> gameList)
+    void BoxArtUrl(JObject jsonObj, List<SearchGame> jsonGameList)
     {
+      Dictionary<string, JArray> boxArtItems = jsonObj["include"]["boxart"]["data"].ToObject<Dictionary<string, JArray>>();
+      string baseString = (string)jsonObj["include"]["boxart"]["base_url"]["original"];
+      foreach (var game in jsonGameList)
+      {
+        string id = game.TitleId.ToString();
+        try
+        {
+          game.BoxArtUrlFront = baseString + (string)boxArtItems[id][0]["filename"];
+        }
+        catch { game.BoxArtUrlFront = null; }
+        try
+        {
+          game.BoxArtUrlBack = baseString + (string)boxArtItems[id][1]["filename"];
+        }
+        catch { game.BoxArtUrlBack = null; }
+      }
+
+      Console.WriteLine();
       
-      return "";
     }
   }  
 }
