@@ -49,18 +49,22 @@
 
 
             <Label Text="Title"
+                   TextColor="Black"
                    FontAttributes="Bold"
-                   HorizontalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"                   
                    Grid.Column="5"
                    Grid.ColumnSpan="4"
                    Grid.Row="0"/>
             <Label Text="{Binding searchGame.Name}"
+                   TextColor="Black"
                    Grid.Column="5"
                    Grid.ColumnSpan="4"
-                   HorizontalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
                    Grid.Row="1"
                    Grid.RowSpan="2"/>
             <Label Text="Game System"
+                   TextColor="Black"
                    FontAttributes="Bold"
                    HorizontalOptions="CenterAndExpand"                   
                    BackgroundColor="Azure"
@@ -68,12 +72,15 @@
                    Grid.ColumnSpan="4"
                    Grid.Row="3"/>
             <Label Text="{Binding searchGame.GameSystem}"
+                   TextColor="Black"
                    Grid.Column="5"
                    Grid.ColumnSpan="4"
-                   HorizontalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
                    Grid.Row="4"
                    Grid.RowSpan="2"/>
             <Label Text="Developer"
+                   TextColor="Black"
                    FontAttributes="Bold"
                    HorizontalOptions="CenterAndExpand"                   
                    BackgroundColor="Azure"
@@ -81,12 +88,14 @@
                    Grid.ColumnSpan="4"
                    Grid.Row="6"/>
             <Label Text="{Binding searchGame.Developer[0]}"
+                   TextColor="Black"
                    Grid.Column="5"
                    Grid.ColumnSpan="4"
-                   HorizontalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
                    Grid.Row="7"                   
                    />
             <Label Text="Publisher"
+                   TextColor="Black"
                    FontAttributes="Bold"
                    HorizontalOptions="CenterAndExpand"                   
                    BackgroundColor="Azure"
@@ -94,9 +103,10 @@
                    Grid.ColumnSpan="4"
                    Grid.Row="8"/>
             <Label Text="{Binding searchGame.Developer[0]}"
+                   TextColor="Black"
                    Grid.Column="5"
                    Grid.ColumnSpan="4"
-                   HorizontalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
                    Grid.Row="9"/>
 
             <Label 
@@ -105,6 +115,7 @@
                 FontSize="Medium"
                 FontAttributes="Bold"
                 HorizontalOptions="CenterAndExpand"
+                TextColor="Black"
                 Text="Overview"/>
 
             <BoxView Grid.Row="11"
@@ -118,14 +129,14 @@
                             Grid.RowSpan="2"
                     Grid.Column="0"
             Grid.ColumnSpan="9">
-                    <Label 
+            <Label 
+                
+                Padding="5,5,5,5"
+                Text="{Binding searchGame.Description}"            
+                TextColor="Black"                
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
                     
-                   Padding="5,5,5,5"
-            Text="{Binding searchGame.Description}"
-            
-            TextColor="Black"
-            VerticalOptions="FillAndExpand"
-            HorizontalOptions="FillAndExpand"/>
                 </ScrollView>
                 <Button
                 Text="Add"
