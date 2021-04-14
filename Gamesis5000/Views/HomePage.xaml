@@ -139,13 +139,6 @@
                 Command="{Binding NavigateCommand}"
                 CommandParameter="{x:Type local:InvValidPage}"
                 />
-        <Button Text="Game Detail Page"
-                BackgroundColor="Purple"
-                Command="{Binding NavigateCommand}"
-                CommandParameter="{x:Type local:GameDetailPage}"/>
-
-
-
         <BoxView
             BackgroundColor="Transparent"
             HeightRequest="100"
