@@ -8,14 +8,15 @@ namespace Gamesis5000.ViewModels
   public class GameDetailViewModel : BaseViewModel
   {
     public Game game { get; set; }    
+    public SearchGame searchGame { get; set; }
     public GameDetailViewModel()
     {
-      
+      searchGame = new SearchGame();
       game = new Game();
     }
-    public GameDetailViewModel(Game paramGame)
+    public GameDetailViewModel(SearchGame inSearchGame)
     {
-      game = paramGame;      
+      searchGame = inSearchGame;      
     }
 
   }

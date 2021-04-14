@@ -33,11 +33,12 @@ namespace Gamesis5000.Views
       BindingContext = _vm = new SearchResultsViewModel(searchParams);
     }
 
-    private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+    async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
       var listView = (ListView)sender;
       Debug.WriteLine($"[Dev Note] Item Selected args: {e.SelectedItemIndex}");
       Debug.WriteLine($"Name of SearchResults at same index: {_vm.SearchResultsList[e.SelectedItemIndex].Name}");
+      await Navigation.PushAsync(new GameDetailPage(_vm.SearchResultsList[e.SelectedItemIndex]));
     }
 
     async void OnTestPollClick(object sender, EventArgs e)
