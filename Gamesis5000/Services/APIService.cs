@@ -123,14 +123,17 @@ namespace Gamesis5000.Services
         string id = game.TitleId.ToString();
         try
         {
-          game.BoxArtUrlFront = baseString + (string)boxArtItems[id][0]["filename"];
+          JArray boxart = boxArtItems[id];
+          for (int i = 0; i < boxart.Count; i++)
+          {
+            if ((string)boxart[i]["side"] == "front") game.BoxArtUrlFront = baseString + (string)boxart[i]["filename"];
+            else if ((string)boxart[i]["side"] == "back") game.BoxArtUrlBack = baseString + (string)boxart[i]["filename"];
+            else { Debug.WriteLine($"[Dev Error] Unable to determine filename for {game.TitleId}"); }
+          }
+          
         }
         catch { game.BoxArtUrlFront = null; }
-        try
-        {
-          game.BoxArtUrlBack = baseString + (string)boxArtItems[id][1]["filename"];
-        }
-        catch { game.BoxArtUrlBack = null; }
+        
       }
 
       Console.WriteLine();
