@@ -38,6 +38,8 @@ namespace Gamesis5000.Views
       var listView = (ListView)sender;
       Debug.WriteLine($"[Dev Note] Item Selected args: {e.SelectedItemIndex}");
       Debug.WriteLine($"Name of SearchResults at same index: {_vm.SearchResultsList[e.SelectedItemIndex].Name}");
+      Game selectedGame = await _vm.SearchToGame(_vm.SearchResultsList[e.SelectedItemIndex]);
+      
       await Navigation.PushAsync(new GameDetailPage(_vm.SearchResultsList[e.SelectedItemIndex]));
     }
 

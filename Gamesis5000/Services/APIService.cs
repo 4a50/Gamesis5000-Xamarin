@@ -1,4 +1,5 @@
-﻿using Gamesis5000.Models;
+﻿using Gamesis5000.Data;
+using Gamesis5000.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -10,17 +11,17 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace Gamesis5000.Services
 {
   public class APIService
   {
+    public IGamesisDB<Game> GamesDB => DependencyService.Get<IGamesisDB<Game>>();
     HttpClient client;
     string longUrl = "";
     //string byTitle = 
     string jsonString = "";
-
-
 
     // This will be just a file access for a while until I can get the JSON parsed out correctly.    
     const string localFileName = "MetroidGamesDBResponse.json";    
@@ -29,7 +30,8 @@ namespace Gamesis5000.Services
     {
       client = new HttpClient();
       Task.Run(async () => longUrl = await EnvRead());
-    }   
+      
+     }   
     public async Task<string> QueryDatabase()
     {
       string jsonOutputString = "";
@@ -104,7 +106,7 @@ namespace Gamesis5000.Services
             .ToList()),            
           }).ToList();
 
-        BoxArtUrl(jsonObj, jsonGameList);
+        BoxArtUrl(jsonObj, jsonGameList);        
         Debug.WriteLine($"[Dev Note] Post-Conversion jsonGameListLength: {jsonGameList.Count}");
       }
       catch(Exception e)
@@ -135,10 +137,11 @@ namespace Gamesis5000.Services
         catch { game.BoxArtUrlFront = null; }
         
       }
-
       Console.WriteLine();
       
     }
+   
+    
   }  
 }
 

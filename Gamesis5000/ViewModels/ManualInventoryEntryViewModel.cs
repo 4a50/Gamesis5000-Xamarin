@@ -42,7 +42,7 @@ namespace Gamesis5000.ViewModels
           game.Publisher = value;
           break;
         case "BoxArt":
-          game.BoxArtUrl = value;
+          game.BoxArtUrlFront = value;
           break;
         case "VideoUrl":
           game.VideoUrl = value;

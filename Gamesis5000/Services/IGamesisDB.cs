@@ -10,6 +10,7 @@ namespace Gamesis5000.Services
   {
     Task<bool> AddGameAsync(Game game);
     Task<Game> GetGameASync(int ID);
+    Task<string> GetGameSystemName(int Id);
     Task<List<Game>> GetAllGamesAsync();
     Task<bool> UpdateGameAsync(Game game);
     Task<bool> DeleteGameAsync(int ID);

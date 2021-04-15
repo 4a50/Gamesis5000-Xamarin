@@ -113,40 +113,20 @@ namespace Gamesis5000.Data
         return false;
       }
     }
-    public async void SeedGameData()
+
+    public async Task<string> GetGameSystemName(int id)
     {
-      Debug.WriteLine("[Dev Note] Seeding Data Method Executing");
-      var data = await GetAllGamesAsync();
-      if (data == null || data.Count == 0)
+      try
       {
-        Debug.WriteLine("[Dev Note] Seeding Data to Database");
-        await AddGameAsync(new Game
-        {
-          Name = "Super Mario World",
-          Description = "Launch Title for the SNES",
-          GameSystem = "SNES",
-          Genre = "Platformer",
-          ReleaseDate = DateTime.Parse("November 1990"),
-          BoxArtUrl = "",
-          Developer = "Nintendo",
-          Publisher = "Nintendo",
-          VideoUrl = ""
-
-        });
-
-        await AddGameAsync(new Game
-        {
-          Name = "Castlevania",
-          Description = "First in the franchise chronicling the quest of Simon Belmont against Count Dracula",
-          GameSystem = "NES",
-          Genre = "Platformer",
-          ReleaseDate = DateTime.Parse("September 1986"),
-          BoxArtUrl = "",
-          Developer = "Konami",
-          Publisher = "Nintendo",
-          VideoUrl = ""
-        });
-
+        GameSystem gs = await database.Table<GameSystem>()
+        .Where(x => x.GsId == id)
+        .FirstOrDefaultAsync();
+        return gs.Name;
+      }
+      catch
+      {
+        Debug.WriteLine($"Unable to Retrieve Requested GameSystem from supplied Id ({id})");
+        return null;
       }
     }
 
@@ -384,6 +364,40 @@ namespace Gamesis5000.Data
         }
       }
       return stringOut;
+    }
+    public async void SeedGameData()
+    {
+      Debug.WriteLine("[Dev Note] Seeding Data Method Executing");
+      var data = await GetAllGamesAsync();
+      if (data == null || data.Count == 0)
+      {
+        Debug.WriteLine("[Dev Note] Seeding Data to Database");
+        await AddGameAsync(new Game
+        {
+          Name = "Super Mario World",
+          Description = "Launch Title for the SNES",
+          GameSystem = "SNES",
+          Genre = "Platformer",
+          ReleaseDate = DateTime.Parse("November 1990"),          
+          Developer = "Nintendo",
+          Publisher = "Nintendo",
+          VideoUrl = ""
+
+        });
+
+        await AddGameAsync(new Game
+        {
+          Name = "Castlevania",
+          Description = "First in the franchise chronicling the quest of Simon Belmont against Count Dracula",
+          GameSystem = "NES",
+          Genre = "Platformer",
+          ReleaseDate = DateTime.Parse("September 1986"),          
+          Developer = "Konami",
+          Publisher = "Nintendo",
+          VideoUrl = ""
+        });
+
+      }
     }
   }
   

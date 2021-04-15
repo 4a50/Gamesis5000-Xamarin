@@ -80,5 +80,16 @@ namespace Gamesis5000.ViewModels
       await GamesDB.RefreshGameSystem(true)
     };
     }
+    async public Task<Game> SearchToGame(SearchGame sg)
+    {
+      return new Game {
+        GameID = sg.TitleId,
+        Name = sg.Name,
+        GameSystem = await GamesDB.GetGameSystemName(sg.GameSystem),
+        Description = sg.Description,
+        //BoxArtUrlBack = sg.
+
+      };
+    }
   }
 }
